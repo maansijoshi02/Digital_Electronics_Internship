@@ -7,6 +7,7 @@ typically using binary code (0s and 1s).
 
 
 **2.Applications of Digital Electronics?**
+
 1.Computing
 2.Communication
 3.Control Systems
@@ -18,6 +19,7 @@ typically using binary code (0s and 1s).
 9.Other Applications
 
 **3.Digital vs Analog signals?**
+
 Analog Signals:
 Continuous:
 They can take on any value within a range, unlike digital signals which are discrete. 
@@ -39,6 +41,7 @@ Easy to Store and Process:
 They are easier to store and process in computers, and can be transmitted over long distances without significant degradation. 
 
 **4.Logic Levels?**
+
 In digital electronics, logic levels represent the two states, typically 0 and 1, of a digital signal, often corresponding to a voltage level. These levels are crucial for how digital circuits interpret and process information. 
 Binary Representation:
 Logic levels are used to represent binary data, where 0 and 1 are the fundamental states. 
