@@ -168,6 +168,8 @@ Example: FE (Hex) → 1111 1110 → Group in 3s: 001 111 111 0 → pad: 000 111 
 
 # Task 2
 
+# Basic Logic Gates
+
 # AND Gate
 
 An AND gate is a basic digital logic gate that outputs 1 (true) only when all its inputs are 1. Otherwise, it outputs 0 (false).
