@@ -168,18 +168,13 @@ Example: FE (Hex) → 1111 1110 → Group in 3s: 001 111 111 0 → pad: 000 111 
 
 # Task 2
 
-**AND Gate**
+# AND Gate
 
 An AND gate is a basic digital logic gate that outputs 1 (true) only when all its inputs are 1. Otherwise, it outputs 0 (false).
 
 **Symbol:**
 
- A ----|          |---- Output
-
-       | AND |
-       
- B ----|         |
-
+![image](https://github.com/user-attachments/assets/06b17f4e-446d-4716-8b54-1b54191bb661)
 
 Represented as: A AND B = A ⋅ B or A ∧ B
 
@@ -196,7 +191,51 @@ Represented as: A AND B = A ⋅ B or A ∧ B
 
 Output is true (1) only when both inputs are true (1).
 
-![image](https://github.com/user-attachments/assets/06b17f4e-446d-4716-8b54-1b54191bb661)
+# OR Gate
+
+An OR gate is a basic digital logic gate that implements logical disjunction. It gives a high (1) output if at least one of its inputs is high. In other words, the output is true when any input is true.
+
+**Symbol**
+
+![image](https://github.com/user-attachments/assets/154e49e1-55b0-44a7-8c85-048318c03223)
+
+**Truth Table:**
+|**A**|	**B**|	**Y (A OR B)**|
+|-----|-------|---------------|
+|0	|0	|0|
+|0	|1	|1|
+|1	|0	|1|
+|1|	1|	1|
+
+**Key Points**:
+
+If both inputs are 0, the output is 0.
+
+If at least one input is 1, the output is 1.
+
+# NOT Gate
+
+A NOT gate, also known as an inverter, is a basic digital logic gate that outputs the opposite (inverse) of its input. It has only one input and one output.
+
+**Function:**
+
+If the input is 1 (true or HIGH), the output is 0 (false or LOW).
+
+If the input is 0, the output is 1.
+
+**Symbol:**
+
+![image](https://github.com/user-attachments/assets/2645779e-a694-4bf8-95c7-abf3cea3769f)
+
+The NOT gate is usually represented by a triangle pointing to the right with a small circle (called a "bubble") at the output.
+
+**Truth Table:**
+|**Input (A)** |	**Output (¬A)**|
+|--------------|------------------|
+|0	|1|
+|1	|0|
+
+This table shows that the NOT gate simply flips the input value.
 
 
 
