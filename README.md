@@ -1,5 +1,8 @@
 # Digital-electronics_-internship
 
+
+# Task 1
+
 # What is Digital Electronics?
 
 Digital electronics is a branch of electronics that deals with systems and devices that use digital signals, which are discrete representations of data, 
@@ -161,6 +164,43 @@ Example: 65 (Octal) → 110101 (Binary) → 0001 1010 1 = 1A1 (Hex, pad as neede
 Method: Hex → Binary (4 bits), then Binary → Octal (3 bits).
 
 Example: FE (Hex) → 1111 1110 → Group in 3s: 001 111 111 0 → pad: 000 111 111 010 → 3 7 2 → Octal: 372
+
+
+# Task 2
+
+**AND Gate**
+
+An AND gate is a basic digital logic gate that outputs 1 (true) only when all its inputs are 1. Otherwise, it outputs 0 (false).
+
+**Symbol:**
+
+ A ----|          |---- Output
+
+       | AND |
+       
+ B ----|         |
+
+
+Represented as: A AND B = A ⋅ B or A ∧ B
+
+**Truth Table**
+
+|*A*|*B*| *A & B*|
+|-----|----|------|
+|0|0|0|
+|0|1|0|
+|1|0|0|
+|1|1|1|
+
+**Key Point:**
+
+Output is true (1) only when both inputs are true (1).
+
+![image](https://github.com/user-attachments/assets/06b17f4e-446d-4716-8b54-1b54191bb661)
+
+
+
+
 
 
 
