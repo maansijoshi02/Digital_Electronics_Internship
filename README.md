@@ -1,15 +1,23 @@
 # Digital Electronics Internship
 
-
 # Task 1
 
-# What is Digital Electronics?
+# Table of contents
+
+- [What is Digital Electronics](#what-is-digital-electronics)
+- [Applications of Digital Electronics](#applications-of-digital-electronics)
+- [Digital vs Analog Signals](#digital-vs-analog-signals)
+- [Number Systems](#number-systems)
+- [Conversion between Number Systems](#conversion-between-number-systems)
+- [Basic Logic Gates](#basic-logic-gates)
+ 
+# What is Digital Electronics
 
 Digital electronics is a branch of electronics that deals with systems and devices that use digital signals, which are discrete representations of data, 
 typically using binary code (0s and 1s).
 
 
-# Applications of Digital Electronics?
+# Applications of Digital Electronics
 
 1.Computing
 
@@ -28,32 +36,8 @@ typically using binary code (0s and 1s).
 8.Industrial automation
 
 
-# Digital vs Analog signals?
+# Digital vs Analog signals
 
-Analog Signals:
-
-Continuous:
-
-They can take on any value within a range, unlike digital signals which are discrete.
-
-Examples:
-
-Sound waves, voltage fluctuations, radio waves, and the hands of a clock. 
-
-High Fidelity:
-They can reproduce the original information with high fidelity, but may not be as robust over long distances. 
-
-Digital Signals:
-
-Discrete:
-
-They represent information using a limited set of values, typically binary code (0s and 1s). 
-Examples:
-
-Digital clocks, computers, and most modern communication systems. 
-Robust to Noise:
-
-Digital signals are more resilient to noise because they can be easily regenerated. 
 | **Analog** | **Digital** |
 |------------|-------------|
 |Analog Signals are contionous signals| Digital Signals are not continous ,they are discrete signals|
@@ -66,7 +50,7 @@ Digital signals are more resilient to noise because they can be easily regenerat
 |Analog circuits have more noise | Digital circuits have less noise|
 |Analog circuits are not so much accurate and precise | Digital circuits are very much accurate and precise|
 
-# Logic Levels?
+# Logic Levels
 
 In digital electronics, logic levels refer to the specific voltage ranges used to represent the two binary states: 
 
@@ -80,7 +64,7 @@ In digital electronics, logic levels refer to the specific voltage ranges used t
 |CMOS (5V)|	0V to 1.5V|	3.5V to 5V|
 |CMOS (3.3V) |	0V to 1V |	2.3V to 3.3V|
 
-# Number Systems?
+# Number Systems
 
 In digital electronics, number systems are used to represent information. These systems vary in base, with the most common being decimal, binary, octal, and hexadecimal. The base or radix of a number system indicates the total number of unique digits used. For example, a number system that uses digits from 0 to 9 has a base of 10.
 
@@ -105,78 +89,225 @@ There are four primary types of number systems used in digital electronics:
 
 # Conversion between number systems 
 
-**1. Decimal → Binary**
-Method: Divide the number by 2 repeatedly, write down remainders in reverse.
+**1. Binary to Decimal Conversion**
 
-Example: 13 ÷ 2 = 6 R1 6 ÷ 2 = 3 R0 3 ÷ 2 = 1 R1 1 ÷ 2 = 0 R1 → Binary: 1101
+To convert a binary number to a decimal number:
+Multiply each bit by  $2^n$  where n is the position of the bit (starting from 0 on the right) and then sum all the results.
 
-**2. Binary → Decimal**
-Method: Multiply each binary digit by 2 raised to its position (from right to left), then sum.
+Binary:   1    0    1    1    0    1
 
-Example: 1101 = 1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13
+Position: 5    4    3    2    1    0
 
-**3. Decimal → Octal**
-Method: Divide the decimal by 8 repeatedly, reverse remainders.
+Value:    1×2⁵ + 0×2⁴ + 1×2³ + 1×2² + 0×2¹ + 1×2⁰
 
-Example: 65 ÷ 8 = 8 R1 8 ÷ 8 = 1 R0 1 ÷ 8 = 0 R1 → Octal: 101
+         = 32 + 0 + 8 + 4 + 0 + 1 = 4
 
-**4. Octal → Decimal**
-Method: Multiply each octal digit by 8^position and sum.
 
-Example: 101 = 1×8² + 0×8¹ + 1×8⁰ = 64 + 0 + 1 = 65
+**2. Decimal to Binary Conversion**
 
-**5. Decimal → Hexadecimal**
-Method: Divide by 16 repeatedly, convert remainders >9 to A–F, reverse.
+To convert a decimal number (base-10) to its binary equivalent (base-2), the division-by-2 method. is used
 
-Example: 254 ÷ 16 = 15 R14 → F and E → Hex: FE
+| Step | Division | Quotient | Remainder |
+| ---- | -------- | -------- | --------- |
+| 1    | 45 ÷ 2   | 22       | 1         |
+| 2    | 22 ÷ 2   | 11       | 0         |
+| 3    | 11 ÷ 2   | 5        | 1         |
+| 4    | 5 ÷ 2    | 2        | 1         |
+| 5    | 2 ÷ 2    | 1        | 0         |
+| 6    | 1 ÷ 2    | 0        | 1         |
 
-**6. Hexadecimal → Decimal**
-Method: Convert each digit to decimal and multiply by 16^position.
+**3. Decimal to Octal Conversion**
 
-Example: FE = F×16¹ + E×16⁰ = 15×16 + 14 = 240 + 14 = 254
+Binary to Decimal: Convert the binary number to decimal by multiplying each bit by 2 raised to its position index (starting from 0 on the right) and summing the results.
 
-**7. Binary → Octal**
-Method: Group binary digits in 3s from right, convert each group to decimal.
+Decimal to Octal: Divide the decimal number by 8 repeatedly, noting the remainders. The octal number is formed by reading the remainders in reverse order.
 
-Example: 110101 = 000 110 101 → 6 5 → Octal: 65
+Example: Convert (101101)₂ to octal
 
-**8. Octal → Binary**
-Method: Convert each octal digit to 3-bit binary.
+**Binary to Decimal:**
 
-Example: 65 → 6 = 110, 5 = 101 → Binary: 110101
+(101101)₂ = 1×2⁵ + 0×2⁴ + 1×2³ + 1×2² + 0×2¹ + 1×2⁰
 
-**9. Binary → Hexadecimal**
-Method: Group binary digits in 4s from right, convert to hex.
+= 32 + 0 + 8 + 4 + 0 + 1 = 45
 
-Example: 11111110 = 1111 1110 → F E → Hex: FE
+**Decimal to Octal:**
 
-**10. Hexadecimal → Binary**
-Method: Convert each hex digit to 4-bit binary.
+45 ÷ 8 = 5 remainder 5
 
-Example: FE → F = 1111, E = 1110 → Binary: 1111111
++1
 
-**11. Octal → Hexadecimal**
-Method: Octal → Binary (3 bits), then Binary → Hex (4 bits).
++1
+
+5 ÷ 8 = 0 remainder 5
+
+Octal: Reading remainders in reverse: 5 5 → (55)₈
+
+**4. Octal to Binary Conversions**
+
+Each octal digit corresponds to exactly 3 binary digits (bits).
+
+Convert 157 (octal) to binary:
+
+1 → 001
+
+5 → 101
+
+7 → 111
+
+So, 157₈ = 001101111₂ 
+
+
+**5. Binary to Hexadecimal Conversion**
+
+Group binary digits into 4-bit chunks starting from the right, then convert each group to its hexadecimal equivalent.
+
+Convert 10110111 (binary) to hexa
+
+Group into 4-bits: 1011 0111
+
+→ 1011 = B
+
+→ 0111 = 7
+
+So, 10110111₂ = B7₁₆
+
+**6. Hexadecimal to Binary Coversion**
+
+Convert 2F (hex) to binary
+
+- 2 → 0010
+
+- F → 1111
+
+So, 2F₁₆ = 00101111₂
+
+**7. Decimal to Octal Conversion**
+
+Example: Decimal to Octal
+
+125 ÷ 8 = 15, remainder 5 
+
+15 ÷ 8  = 1, remainder 7 
+
+1 ÷ 8   = 0, remainder 1
+
+So, 125₁₀ = 175₈
+
+
+**8. Octal to Decimal Coversion**
+
+To convert octal to decimal, positional notation is used — each digit is multiplied by 8 raised to the power of its position (from right to left, starting at 0).
+
+Example 1: Convert 175&#8328; to decimal
+
+- 1.8&#178;=6
+- 7.8^1=56
+- 5.8^0=5
+
+64+56+5=125
+
+So, 
+175&#178;=125&#10;
+
+**9.Decimal to Hexadecimal Conversion**
+
+Example:
+
+254 ÷ 16 = 15, remainder 14 → E  
+
+15 ÷ 16  = 0, remainder 15 → F
+
+254₁₀ = FE₁₆
+
+**10. Hexadecimal to Decimal Conversion**
+
+Example: Convert 2F to decimal
+
+- F = 15, in the 16^0 place →15×1=15
+
+- 2 = 2, in the 16^1 place → 2×16=32
+
+Add: 32+15=47
+
+2F₁₆ = 47₁₀
+
+**11. Octal to Heexideacimal Conversion**
+
+Example: Convert 175₈ to hexadecimal
+
+**Octal to Binary**
+
+1 → 001
+
+7 → 111
+
+5 → 101
+
+So, 175₈ = 001 111 101₂ → Combine → 001111101
+
+Pad to make full 4-bit groups: 0001 1111 01 → pad left: 0001 1111 0101
+
+Final binary: 0001 1111 0101
+
+ **Binary to Hexa**
+
+0001 → 1
+
+1111 → F
+
+0101 → 5
+
+So, 175₈ = 1F5₁₆
+
+Method:
+
+Octal → Binary (3 bits), then Binary → Hex (4 bits).
 
 Example: 65 (Octal) → 110101 (Binary) → 0001 1010 1 = 1A1 (Hex, pad as needed)
 
-**12. Hexadecimal → Octal**
-Method: Hex → Binary (4 bits), then Binary → Octal (3 bits).
+**12. Hexadecimal to Octal Conversion**
 
-Example: FE (Hex) → 1111 1110 → Group in 3s: 001 111 111 0 → pad: 000 111 111 010 → 3 7 2 → Octal: 372
+Example: Convert `2F₁₆` to octal
+
+**Hexa to Binary**
+
+* 2 → 0010
+* F → 1111
+
+Binary: `0010 1111`
+
+**Binary to Octal**
+
+Group into 3 bits (from right):
+`00 101 111` → pad left with zeros → `000 010 111 1`
+
+Better: pad full groups of 3 bits:
+`000 010 111 111`
+
+Actually, the binary `00101111` padded to 9 bits is `000 010 111 111`
+
+Groups:
+
+* 000 → 0
+* 010 → 2
+* 111 → 7
+* 111 → 7
+
+Octal: **0277**
+
+---
+
+Answer: 2F_{16} = 277_8
+
 
 
 # Task 2
 
 # Basic Logic Gates
 
-# AND Gate
+# 1.AND Gate
 
 An AND gate is a basic digital logic gate that outputs 1 (true) only when all its inputs are 1. Otherwise, it outputs 0 (false).
-
-**Symbol:**
-
-![image](https://github.com/user-attachments/assets/06b17f4e-446d-4716-8b54-1b54191bb661)
 
 Represented as: A AND B = A ⋅ B or A ∧ B
 
@@ -193,13 +324,13 @@ Represented as: A AND B = A ⋅ B or A ∧ B
 
 Output is true (1) only when both inputs are true (1).
 
-# OR Gate
+**Symbol:**
+
+![image](https://github.com/user-attachments/assets/06b17f4e-446d-4716-8b54-1b54191bb661)
+
+# 2.OR Gate
 
 An OR gate is a basic digital logic gate that implements logical disjunction. It gives a high (1) output if at least one of its inputs is high. In other words, the output is true when any input is true.
-
-**Symbol**
-
-![image](https://github.com/user-attachments/assets/154e49e1-55b0-44a7-8c85-048318c03223)
 
 **Truth Table:**
 |**A**|	**B**|	**Y (A OR B)**|
@@ -215,7 +346,11 @@ If both inputs are 0, the output is 0.
 
 If at least one input is 1, the output is 1.
 
-# NOT Gate
+**Symbol**
+
+![image](https://github.com/user-attachments/assets/9a5865c7-a982-4b78-a88f-4b383f66c838)
+
+# 3.NOT Gate
 
 A NOT gate, also known as an inverter, is a basic digital logic gate that outputs the opposite (inverse) of its input. It has only one input and one output.
 
@@ -223,11 +358,7 @@ A NOT gate, also known as an inverter, is a basic digital logic gate that output
 
 If the input is 1 (true or HIGH), the output is 0 (false or LOW).
 
-If the input is 0, the output is 1.
-
-**Symbol:**
-
-![image](https://github.com/user-attachments/assets/2645779e-a694-4bf8-95c7-abf3cea3769f)
+If the input is 0, the output is 1
 
 The NOT gate is usually represented by a triangle pointing to the right with a small circle (called a "bubble") at the output.
 
@@ -238,6 +369,105 @@ The NOT gate is usually represented by a triangle pointing to the right with a s
 |1	|0|
 
 This table shows that the NOT gate simply flips the input value.
+
+**Symbol:**
+
+![image](https://github.com/user-attachments/assets/b7ef0b26-2648-4ccd-8ba9-3d6c8bcec104)
+
+
+# 4.NAND GATE
+
+A NAND gate is a fundamental digital logic gate that outputs false (0) only when all its inputs are true (1); otherwise, it outputs true (1).
+
+Definition:
+
+
+### Truth Table (2-input NAND gate):
+
+| Input A | Input B | Output (A NAND B) |
+| ------- | ------- | ----------------- |
+| 0       | 0       | 1                 |
+| 0       | 1       | 1                 |
+| 1       | 0       | 1                 |
+| 1       | 1       | 0                 |
+
+
+### Symbol:
+
+![image](https://github.com/user-attachments/assets/e778b15d-9fa1-41a3-a75c-50fd50839e8c)
+
+
+# 5.NOR GATE
+
+* It’s NOT-OR gate — the output is true only when all inputs are false.
+* It outputs **1** if all inputs are 0, else outputs 0.
+
+### Truth Table (2-input NOR gate):
+
+| Input A | Input B | Output (A NOR B) |
+| ------- | ------- | ---------------- |
+| 0       | 0       | 1                |
+| 0       | 1       | 0                |
+| 1       | 0       | 0                |
+| 1       | 1       | 0                |
+
+
+# Symbol:
+
+![image](https://github.com/user-attachments/assets/3c3e88e0-6c59-4be3-8378-14e478461cdd)
+
+
+# 6.XOR GATE
+
+* Outputs 1 if the inputs are different.
+  
+* Outputs 0 if the inputs are the same.
+
+---
+
+### Truth Table (2-input XOR gate):
+
+| Input A | Input B | Output (A XOR B) |
+| ------- | ------- | ---------------- |
+| 0       | 0       | 0                |
+| 0       | 1       | 1                |
+| 1       | 0       | 1                |
+| 1       | 1       | 0                |
+
+
+### Symbol: 
+
+![image](https://github.com/user-attachments/assets/8ab12f1d-e963-4a60-9e25-0e380cea3308)
+
+
+# 7.XNOR GATE
+
+* It outputs 1 if the inputs are the same (both 0 or both 1).
+* 
+* It outputs 0 if the inputs are different.
+
+---
+
+### Truth Table (2-input XNOR gate):
+
+| Input A | Input B | Output (A XNOR B) |
+| ------- | ------- | ----------------- |
+| 0       | 0       | 1                 |
+| 0       | 1       | 0                 |
+| 1       | 0       | 0                 |
+| 1       | 1       | 1                 |
+
+
+### Symbol: 
+
+![image](https://github.com/user-attachments/assets/6c954d16-0ade-459d-b01d-2447943fb80b)
+
+
+
+
+
+
+
 
 
 
