@@ -1,4 +1,4 @@
-# Digital-electronics_-internship
+# Digital Electronics Internship
 
 
 # Task 1
