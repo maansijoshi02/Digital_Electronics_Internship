@@ -10,6 +10,7 @@
 - [Number Systems](#number-systems)
 - [Conversion between Number Systems](#conversion-between-number-systems)
 - [Basic Logic Gates](#basic-logic-gates)
+- [Integrated Circuits-IC's](#integrated-circuits-ics)
  
 # What is Digital Electronics
 
@@ -348,7 +349,8 @@ If at least one input is 1, the output is 1.
 
 **Symbol**
 
-![image](https://github.com/user-attachments/assets/9a5865c7-a982-4b78-a88f-4b383f66c838)
+![image](https://github.com/user-attachments/assets/6be8320f-4ca4-4bf8-ab74-5247adaa8503)
+
 
 # 3.NOT Gate
 
@@ -372,7 +374,7 @@ This table shows that the NOT gate simply flips the input value.
 
 **Symbol:**
 
-![image](https://github.com/user-attachments/assets/b7ef0b26-2648-4ccd-8ba9-3d6c8bcec104)
+![image](https://github.com/user-attachments/assets/337cd0d1-175a-4884-aca2-0c4efbc0b9af)
 
 
 # 4.NAND GATE
@@ -394,7 +396,7 @@ Definition:
 
 ### Symbol:
 
-![image](https://github.com/user-attachments/assets/e778b15d-9fa1-41a3-a75c-50fd50839e8c)
+![image](https://github.com/user-attachments/assets/5800ffd1-be13-4cf5-ab34-9b2f89793c3e)
 
 
 # 5.NOR GATE
@@ -414,7 +416,7 @@ Definition:
 
 # Symbol:
 
-![image](https://github.com/user-attachments/assets/3c3e88e0-6c59-4be3-8378-14e478461cdd)
+![image](https://github.com/user-attachments/assets/fd1c8448-55a1-4ae4-9dc0-bcdb7a2677ef)
 
 
 # 6.XOR GATE
@@ -437,7 +439,7 @@ Definition:
 
 ### Symbol: 
 
-![image](https://github.com/user-attachments/assets/8ab12f1d-e963-4a60-9e25-0e380cea3308)
+![image](https://github.com/user-attachments/assets/91cb0dba-9d5c-4c2c-8082-0a23d3e0b9e0)
 
 
 # 7.XNOR GATE
@@ -460,7 +462,8 @@ Definition:
 
 ### Symbol: 
 
-![image](https://github.com/user-attachments/assets/6c954d16-0ade-459d-b01d-2447943fb80b)
+![image](https://github.com/user-attachments/assets/2455c2cf-bf29-486a-8924-e82b508ccce3)
+
 
 # Integrated Circuits-IC's
 
