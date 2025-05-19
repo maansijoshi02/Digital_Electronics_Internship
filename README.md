@@ -462,7 +462,233 @@ Definition:
 
 ![image](https://github.com/user-attachments/assets/6c954d16-0ade-459d-b01d-2447943fb80b)
 
+# Integrated Circuits-IC's
 
+**What is an IC**
+
+An IC is a small electronic device made of a semiconductor material, usually silicon, that contains many microscopic components (like transistors, resistors, and capacitors). Found in virtually all electronic equipment (computers, phones, etc.).
+
+Example: A microprocessor is an example of an IC.
+
+**Types of Logic Gates and Their IC's**
+
+| Gate Type | Symbol | Common IC   | No. of Gates in IC | Pin Count | Notes                                                |
+| --------- | ------ | ----------- | ------------------ | --------- | ---------------------------------------------------- |
+| AND       | ∧      | **7408**    | 4 gates            | 14 pins   | 2 inputs per gate                                    |
+| OR        | ∨      | **7432**    | 4 gates            | 14 pins   | 2 inputs per gate                                    |
+| NOT       | ¬      | **7404**    | 6 inverters        | 14 pins   | 1 input per gate                                     |
+| NAND      | ↑      | **7400**    | 4 gates            | 14 pins   | 2 inputs per gate                                    |
+| NOR       | ↓      | **7402**    | 4 gates            | 14 pins   | 2 inputs per gate                                    |
+| XOR       | ⊕      | **7486**    | 4 gates            | 14 pins   | 2 inputs per gate                                    |
+| XNOR      | ⊙      | **74LS266** | 4 gates            | 14 pins   | 2 inputs per gate (some versions are open-collector) |
+
+**1. 7408 IC - AND GATE**
+
+![image](https://github.com/user-attachments/assets/f43bd36c-0e72-4638-a4dc-43ce3a8ea894)
+
+![image](https://github.com/user-attachments/assets/3f17982b-8f95-456d-be69-e373ef7143e0)
+
+Description: The IC 7408 is a Quad 2-Input AND Gate integrated circuit. It is a digital logic IC that contains four independent AND gates, each with two inputs and one output. This IC is part of the 7400 series of TTL (Transistor-Transistor Logic) chips.
+
+Each AND gate in the IC performs the logical AND operation, which outputs HIGH (1) only when both inputs are HIGH (1). Otherwise, the output remains LOW (0).
+
+| **Pin No.** | **Name** | **Description**                  |
+| ----------- | -------- | -------------------------------- |
+| 1           | 1A       | Input A of Gate 1                |
+| 2           | 1B       | Input B of Gate 1                |
+| 3           | 1Y       | Output of Gate 1                 |
+| 4           | 2A       | Input A of Gate 2                |
+| 5           | 2B       | Input B of Gate 2                |
+| 6           | 2Y       | Output of Gate 2                 |
+| 7           | GND      | Ground (0V)                      |
+| 8           | 3Y       | Output of Gate 3                 |
+| 9           | 3B       | Input B of Gate 3                |
+| 10          | 3A       | Input A of Gate 3                |
+| 11          | 4Y       | Output of Gate 4                 |
+| 12          | 4B       | Input B of Gate 4                |
+| 13          | 4A       | Input A of Gate 4                |
+| 14          | Vcc      | Power Supply (+5V for TTL logic) |
+
+**2. 7432 IC - OR GATE**
+
+![image](https://github.com/user-attachments/assets/78a25972-cd4e-499b-8c67-bfd827dfe799)
+
+![image](https://github.com/user-attachments/assets/825c6ffa-5eed-48d7-be0d-1ec1988cbf93)
+
+Description: The OR gate IC, commonly represented by the 7432 IC in TTL logic families, contains four independent 2-input OR gates.
+
+An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or both of its inputs are HIGH (1). It only outputs LOW (0) when all inputs are LOW (0).
+
+| **Pin Number** | **Pin Name** | **Description**             |
+| -------------- | ------------ | --------------------------- |
+| 1              | 1A           | Input A of OR Gate 1        |
+| 2              | 1B           | Input B of OR Gate 1        |
+| 3              | 1Y           | Output of OR Gate 1         |
+| 4              | 2A           | Input A of OR Gate 2        |
+| 5              | 2B           | Input B of OR Gate 2        |
+| 6              | 2Y           | Output of OR Gate 2         |
+| 7              | GND          | Ground (0V)                 |
+| 8              | 3Y           | Output of OR Gate 3         |
+| 9              | 3B           | Input B of OR Gate 3        |
+| 10             | 3A           | Input A of OR Gate 3        |
+| 11             | 4Y           | Output of OR Gate 4         |
+| 12             | 4B           | Input B of OR Gate 4        |
+| 13             | 4A           | Input A of OR Gate 4        |
+| 14             | Vcc          | Positive power supply (+5V) |
+
+**3. 7404 IC - NOT GATE**
+
+![image](https://github.com/user-attachments/assets/73c9eebf-ff91-4ba9-b58b-90562071988f)
+
+![image](https://github.com/user-attachments/assets/2cd61a62-480c-4b37-8d48-d5eff1f6d01f)
+
+Description: The 7404 IC is a Hex Inverter, meaning it contains 6 independent NOT gates. Each NOT gate takes a single input and outputs the inverted logic level.
+
+If the input is HIGH (1), the output is LOW (0).
+
+If the input is LOW (0), the output is HIGH (1).
+
+This IC is commonly used in digital electronics for signal inversion and logical negation.
+
+| Pin No. | Pin Name | Description          |
+| ------- | -------- | -------------------- |
+| 1       | 1A       | Input of NOT Gate 1  |
+| 2       | 1Y       | Output of NOT Gate 1 |
+| 3       | 2A       | Input of NOT Gate 2  |
+| 4       | 2Y       | Output of NOT Gate 2 |
+| 5       | 3A       | Input of NOT Gate 3  |
+| 6       | 3Y       | Output of NOT Gate 3 |
+| 7       | GND      | Ground (0V)          |
+| 8       | 4Y       | Output of NOT Gate 4 |
+| 9       | 4A       | Input of NOT Gate 4  |
+| 10      | 5Y       | Output of NOT Gate 5 |
+| 11      | 5A       | Input of NOT Gate 5  |
+| 12      | 6Y       | Output of NOT Gate 6 |
+| 13      | 6A       | Input of NOT Gate 6  |
+| 14      | Vcc      | Power supply (+5V)   |
+
+**4. 7400 IC - NAND GATE**
+
+![image](https://github.com/user-attachments/assets/2388c74f-d9b9-490d-88f4-ed105c616fc1)
+
+![image](https://github.com/user-attachments/assets/e87ebbe4-405c-4465-b69c-177ba8b3b81f)
+
+Description: The 7400 IC is a quad 2-input NAND gate integrated circuit. It contains four independent NAND gates, each having two inputs and one output. This IC belongs to the 7400 TTL logic family, widely used in digital electronics.
+
+How the NAND Gate Works:
+A NAND gate gives a LOW (0) output only when both inputs are HIGH (1).
+
+In all other cases, the output is HIGH (1).
+
+It’s the inverse of the AND gate.
+
+| Pin No. | Pin Name | Description            |
+| ------- | -------- | ---------------------- |
+| 1       | 1A       | Input 1 of NAND Gate 1 |
+| 2       | 1B       | Input 2 of NAND Gate 1 |
+| 3       | 1Y       | Output of NAND Gate 1  |
+| 4       | 2A       | Input 1 of NAND Gate 2 |
+| 5       | 2B       | Input 2 of NAND Gate 2 |
+| 6       | 2Y       | Output of NAND Gate 2  |
+| 7       | GND      | Ground (0V)            |
+| 8       | 3Y       | Output of NAND Gate 3  |
+| 9       | 3A       | Input 1 of NAND Gate 3 |
+| 10      | 3B       | Input 2 of NAND Gate 3 |
+| 11      | 4Y       | Output of NAND Gate 4  |
+| 12      | 4A       | Input 1 of NAND Gate 4 |
+| 13      | 4B       | Input 2 of NAND Gate 4 |
+| 14      | Vcc      | Power Supply (+5V)     |
+
+**5. 7402 IC - NOR GATE**
+
+![image](https://github.com/user-attachments/assets/0e53d122-f5ef-4fce-b1be-63d55fedf258)
+
+![image](https://github.com/user-attachments/assets/b93d5e54-2d7b-458a-a426-fc9fb29fcc1d)
+
+Description:
+
+The 7402 IC contains four independent 2-input NOR gates.
+
+A NOR gate gives a HIGH output only when both inputs are LOW.
+
+It is the inverse of the OR gate.
+
+| Pin No. | Pin Name | Description           |
+| ------- | -------- | --------------------- |
+| 1       | 1A       | Input A of NOR Gate 1 |
+| 2       | 1B       | Input B of NOR Gate 1 |
+| 3       | 1Y       | Output of NOR Gate 1  |
+| 4       | 2A       | Input A of NOR Gate 2 |
+| 5       | 2B       | Input B of NOR Gate 2 |
+| 6       | 2Y       | Output of NOR Gate 2  |
+| 7       | GND      | Ground (0V)           |
+| 8       | 3Y       | Output of NOR Gate 3  |
+| 9       | 3B       | Input B of NOR Gate 3 |
+| 10      | 3A       | Input A of NOR        |
+
+
+**6. 7486 IC - XOR GATE**
+
+![image](https://github.com/user-attachments/assets/3db9e2a7-48e3-438b-b450-28f0b75c016b)
+
+![image](https://github.com/user-attachments/assets/4cea9ef9-3644-44bb-b3d8-ca285ee95779)
+
+Description:
+
+The 7486 IC includes four 2-input XOR (Exclusive OR) gates.
+
+XOR gates output HIGH only when inputs are different.
+
+Useful in arithmetic circuits, parity checkers, and logic comparisons.
+
+| Pin No. | Pin Name | Description           |
+| ------- | -------- | --------------------- |
+| 1       | 1A       | Input A of XOR Gate 1 |
+| 2       | 1B       | Input B of XOR Gate 1 |
+| 3       | 1Y       | Output of XOR Gate 1  |
+| 4       | 2A       | Input A of XOR Gate 2 |
+| 5       | 2B       | Input B of XOR Gate 2 |
+| 6       | 2Y       | Output of XOR Gate 2  |
+| 7       | GND      | Ground (0V)           |
+| 8       | 3Y       | Output of XOR Gate 3  |
+| 9       | 3B       | Input B of XOR Gate 3 |
+| 10      | 3A       | Input A of XOR Gate 3 |
+| 11      | 4Y       | Output of XOR Gate 4  |
+| 12      | 4B       | Input B of XOR Gate 4 |
+| 13      | 4A       | Input A of XOR Gate 4 |
+| 14      | Vcc      | Supply Voltage (+5V)  |
+
+
+**7. 74LS266 IC - XNOR GATE**
+
+![image](https://github.com/user-attachments/assets/7ee83fbf-3646-4067-9423-f250894cbda7)
+
+![image](https://github.com/user-attachments/assets/a4cf92dc-b8ac-4b40-ab66-73050b1dbb7b)
+
+Description: 
+
+The 74LS266 IC is similar to 7486 but includes open collector outputs.
+
+Open collector allows multiple gate outputs to be connected together (wired-AND logic).
+
+Ideal for bus systems and multi-device communication.
+
+| Pin No. | Pin Name | Description                           |
+| ------- | -------- | ------------------------------------- |
+| 1       | 1A       | Input A of XOR Gate 1                 |
+| 2       | 1B       | Input B of XOR Gate 1                 |
+| 3       | 1Y       | Output of XOR Gate 1 (Open Collector) |
+| 4       | 2A       | Input A of XOR Gate 2                 |
+| 5       | 2B       | Input B of XOR Gate 2                 |
+| 6       | 2Y       | Output of XOR Gate 2 (Open Collector) |
+| 7       | GND      | Ground (0V)                           |
+| 8       | 3Y       | Output of XOR Gate 3 (Open Collector) |
+| 9       | 3B       | Input B of XOR Gate 3                 |
+| 10      | 3A       | Input A of XOR Gate 3                 |
+| 11      | 4Y       | Output of XOR Gate 4 (Open Collector) |
+| 12      | 4B       | Input B of XOR Gate 4                 |
+| 13      | 4A       | Input A of XOR Gate 4                 |
+| 14      | Vcc      | Power Supply (+5V)                    |
 
 
 
