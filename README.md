@@ -489,7 +489,8 @@ Example: A microprocessor is an example of an IC.
 
 ![image](https://github.com/user-attachments/assets/f43bd36c-0e72-4638-a4dc-43ce3a8ea894)
 
-![image](https://github.com/user-attachments/assets/3f17982b-8f95-456d-be69-e373ef7143e0)
+![image](https://github.com/user-attachments/assets/10857107-11d2-41a6-80a2-004846ef4059)
+
 
 https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408
 
