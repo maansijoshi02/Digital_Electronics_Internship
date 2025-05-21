@@ -487,6 +487,8 @@ Example: A microprocessor is an example of an IC.
 
 ![image](https://github.com/user-attachments/assets/558ba018-f846-43de-9cbd-81383cf88f6d)
 
+**Tinkercad Link**
+
 https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408
 
 **Description:** The IC 7408 is a Quad 2-Input AND Gate integrated circuit. It is a digital logic IC that contains four independent AND gates, each with two inputs and one output. This IC is part of the 7400 series of TTL (Transistor-Transistor Logic) chips.
@@ -518,6 +520,8 @@ Each AND gate in the IC performs the logical AND operation, which outputs HIGH (
 
 ![image](https://github.com/user-attachments/assets/078ea68b-099b-4fed-a30f-0421827c5ca3)
 
+**Tinkercad Link**
+
 https://www.tinkercad.com/things/7V7teeZ8tZm-or-gate-ic-7432
 
 **Description:** The OR gate IC, commonly represented by the 7432 IC in TTL logic families, contains four independent 2-input OR gates.
@@ -548,6 +552,8 @@ An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or bot
 ![image](https://github.com/user-attachments/assets/a7a4bae7-19e9-4686-971a-5973ef1bc280)
 
 ![image](https://github.com/user-attachments/assets/4125c024-2a12-4a1f-bc57-4d8a065d119a)
+
+**Tinkercad Link**
 
 https://www.tinkercad.com/things/aLN9CwaAC5x-not-gate-ic-7404
 
@@ -583,6 +589,8 @@ This IC is commonly used in digital electronics for signal inversion and logical
 ![image](https://github.com/user-attachments/assets/fba78895-ca0f-41b9-923f-918ab8d6d245)
 
 ![image](https://github.com/user-attachments/assets/f1739f57-4cba-4304-a290-04fa33970c57)
+
+**Tinkercad Link**
 
 https://www.tinkercad.com/things/je7Ft3yBEBO-nand-gate-ic-7400
 
@@ -620,6 +628,8 @@ It’s the inverse of the AND gate.
 
 ![image](https://github.com/user-attachments/assets/a79c16c2-e00d-42d0-b21b-7f43bb4bce5a)
 
+**Tinkercad Link**
+
 https://www.tinkercad.com/things/3FRNHH2hQEo-nor-gate-ic-7402
 
 **Description:**
@@ -651,6 +661,8 @@ It is the inverse of the OR gate.
 ![image](https://github.com/user-attachments/assets/d6f3a466-b078-4ba3-86e8-1556eeb4636f)
 
 ![image](https://github.com/user-attachments/assets/449ce512-7652-4969-8705-bfc3489b160a)
+
+**Tinkercad Link**
 
 https://www.tinkercad.com/things/6naD4VcsiNA-xor-gate-ic-7486
 
@@ -687,6 +699,8 @@ Useful in arithmetic circuits, parity checkers, and logic comparisons.
 ![image](https://github.com/user-attachments/assets/b8640aab-c398-46c6-a2de-fc4e169fac6c)
 
 ![image](https://github.com/user-attachments/assets/a5e4ebab-f972-42b2-b18e-759d43d9c631)
+
+**Tinkercad Link**
 
 https://www.tinkercad.com/things/k2SIEZURJmN-xnor-gate-ic
 
@@ -732,8 +746,23 @@ Ideal for bus systems and multi-device communication.
 | **XNOR** | 7485 (Quad 2-input XNOR gate)           | **Equality checkers** (verifying if two inputs match)                     |
 |          | 74266 (Quad 2-input Exclusive-NOR gate) | **Parity bit generation** (checking for even parity)                      |
 
+# Implemententation of logic Gates
 
+# AND USING NAND GATE
 
+![image](https://github.com/user-attachments/assets/e89b17f0-ca74-4bf2-a6ae-30ed21dd4b7d)
+
+**Tinkercad Link**
+
+https://www.tinkercad.com/things/kUNVNNtWxwI-and-using-nand-gate
+
+# OR USING AND GATE
+
+![image](https://github.com/user-attachments/assets/472b93a0-19e2-4e3e-9396-2177519b0a08)
+
+**Tinkercad Link**
+
+https://www.tinkercad.com/things/endyNZVZ2Ew-or-using-nand
 
 
 
