@@ -135,8 +135,6 @@ Example: Convert (101101)₂ to octal
 
 45 ÷ 8 = 5 remainder 5
 
-+1
-
 5 ÷ 8 = 0 remainder 5
 
 Octal: Reading remainders in reverse: 5 5 → (55)₈
