@@ -137,8 +137,6 @@ Example: Convert (101101)₂ to octal
 
 +1
 
-+1
-
 5 ÷ 8 = 0 remainder 5
 
 Octal: Reading remainders in reverse: 5 5 → (55)₈
@@ -156,7 +154,6 @@ Convert 157 (octal) to binary:
 7 → 111
 
 So, 157₈ = 001101111₂ 
-
 
 **5. Binary to Hexadecimal Conversion**
 
@@ -193,7 +190,6 @@ Example: Decimal to Octal
 1 ÷ 8   = 0, remainder 1
 
 So, 125₁₀ = 175₈
-
 
 **8. Octal to Decimal Coversion**
 
@@ -491,10 +487,11 @@ Example: A microprocessor is an example of an IC.
 
 ![image](https://github.com/user-attachments/assets/10857107-11d2-41a6-80a2-004846ef4059)
 
+![image](https://github.com/user-attachments/assets/558ba018-f846-43de-9cbd-81383cf88f6d)
 
 https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408
 
-Description: The IC 7408 is a Quad 2-Input AND Gate integrated circuit. It is a digital logic IC that contains four independent AND gates, each with two inputs and one output. This IC is part of the 7400 series of TTL (Transistor-Transistor Logic) chips.
+**Description:** The IC 7408 is a Quad 2-Input AND Gate integrated circuit. It is a digital logic IC that contains four independent AND gates, each with two inputs and one output. This IC is part of the 7400 series of TTL (Transistor-Transistor Logic) chips.
 
 Each AND gate in the IC performs the logical AND operation, which outputs HIGH (1) only when both inputs are HIGH (1). Otherwise, the output remains LOW (0).
 
@@ -517,11 +514,15 @@ Each AND gate in the IC performs the logical AND operation, which outputs HIGH (
 
 **2. 7432 IC - OR GATE**
 
-![image](https://github.com/user-attachments/assets/78a25972-cd4e-499b-8c67-bfd827dfe799)
+![image](https://github.com/user-attachments/assets/6868eaae-936e-43b6-967e-3e11dddb5aa4)
 
-![image](https://github.com/user-attachments/assets/825c6ffa-5eed-48d7-be0d-1ec1988cbf93)
+![image](https://github.com/user-attachments/assets/59c1909c-1fa0-43b4-9f21-da27b86f934a)
 
-Description: The OR gate IC, commonly represented by the 7432 IC in TTL logic families, contains four independent 2-input OR gates.
+![image](https://github.com/user-attachments/assets/078ea68b-099b-4fed-a30f-0421827c5ca3)
+
+https://www.tinkercad.com/things/7V7teeZ8tZm-or-gate-ic-7432
+
+**Description:** The OR gate IC, commonly represented by the 7432 IC in TTL logic families, contains four independent 2-input OR gates.
 
 An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or both of its inputs are HIGH (1). It only outputs LOW (0) when all inputs are LOW (0).
 
@@ -544,11 +545,15 @@ An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or bot
 
 **3. 7404 IC - NOT GATE**
 
-![image](https://github.com/user-attachments/assets/73c9eebf-ff91-4ba9-b58b-90562071988f)
+![image](https://github.com/user-attachments/assets/75cfb284-c5d9-4912-982b-711228d87f8a)
 
-![image](https://github.com/user-attachments/assets/2cd61a62-480c-4b37-8d48-d5eff1f6d01f)
+![image](https://github.com/user-attachments/assets/a7a4bae7-19e9-4686-971a-5973ef1bc280)
 
-Description: The 7404 IC is a Hex Inverter, meaning it contains 6 independent NOT gates. Each NOT gate takes a single input and outputs the inverted logic level.
+![image](https://github.com/user-attachments/assets/4125c024-2a12-4a1f-bc57-4d8a065d119a)
+
+https://www.tinkercad.com/things/aLN9CwaAC5x-not-gate-ic-7404
+
+**Description:** The 7404 IC is a Hex Inverter, meaning it contains 6 independent NOT gates. Each NOT gate takes a single input and outputs the inverted logic level.
 
 If the input is HIGH (1), the output is LOW (0).
 
@@ -575,11 +580,15 @@ This IC is commonly used in digital electronics for signal inversion and logical
 
 **4. 7400 IC - NAND GATE**
 
-![image](https://github.com/user-attachments/assets/2388c74f-d9b9-490d-88f4-ed105c616fc1)
+![image](https://github.com/user-attachments/assets/b3ac7521-b772-4a16-80fe-68542f4ba54b)
 
-![image](https://github.com/user-attachments/assets/e87ebbe4-405c-4465-b69c-177ba8b3b81f)
+![image](https://github.com/user-attachments/assets/fba78895-ca0f-41b9-923f-918ab8d6d245)
 
-Description: The 7400 IC is a quad 2-input NAND gate integrated circuit. It contains four independent NAND gates, each having two inputs and one output. This IC belongs to the 7400 TTL logic family, widely used in digital electronics.
+![image](https://github.com/user-attachments/assets/f1739f57-4cba-4304-a290-04fa33970c57)
+
+https://www.tinkercad.com/things/je7Ft3yBEBO-nand-gate-ic-7400
+
+**Description:** The 7400 IC is a quad 2-input NAND gate integrated circuit. It contains four independent NAND gates, each having two inputs and one output. This IC belongs to the 7400 TTL logic family, widely used in digital electronics.
 
 How the NAND Gate Works:
 A NAND gate gives a LOW (0) output only when both inputs are HIGH (1).
@@ -607,11 +616,15 @@ It’s the inverse of the AND gate.
 
 **5. 7402 IC - NOR GATE**
 
-![image](https://github.com/user-attachments/assets/0e53d122-f5ef-4fce-b1be-63d55fedf258)
+![image](https://github.com/user-attachments/assets/5b1ff97e-eb39-4334-b0f6-dee0806fc290)
 
-![image](https://github.com/user-attachments/assets/b93d5e54-2d7b-458a-a426-fc9fb29fcc1d)
+![image](https://github.com/user-attachments/assets/2bf6f9ee-3e20-4dc7-85df-a75dc4760d39)
 
-Description:
+![image](https://github.com/user-attachments/assets/a79c16c2-e00d-42d0-b21b-7f43bb4bce5a)
+
+https://www.tinkercad.com/things/3FRNHH2hQEo-nor-gate-ic-7402
+
+**Description:**
 
 The 7402 IC contains four independent 2-input NOR gates.
 
@@ -635,14 +648,15 @@ It is the inverse of the OR gate.
 
 **6. 7486 IC - XOR GATE**
 
-![image](https://github.com/user-attachments/assets/3db9e2a7-48e3-438b-b450-28f0b75c016b)
+![image](https://github.com/user-attachments/assets/1660dcd3-c61e-4cd9-9954-fa62fd542cb2)
 
-![image](https://github.com/user-attachments/assets/4cea9ef9-3644-44bb-b3d8-ca285ee95779)
+![image](https://github.com/user-attachments/assets/d6f3a466-b078-4ba3-86e8-1556eeb4636f)
 
 ![image](https://github.com/user-attachments/assets/449ce512-7652-4969-8705-bfc3489b160a)
 
+https://www.tinkercad.com/things/6naD4VcsiNA-xor-gate-ic-7486
 
-Description:
+**Description:**
 
 The 7486 IC includes four 2-input XOR (Exclusive OR) gates.
 
@@ -670,11 +684,15 @@ Useful in arithmetic circuits, parity checkers, and logic comparisons.
 
 **7. 74LS266 IC - XNOR GATE**
 
-![image](https://github.com/user-attachments/assets/7ee83fbf-3646-4067-9423-f250894cbda7)
+![image](https://github.com/user-attachments/assets/a3691b04-7d62-4ba2-854e-e9dad0a22665)
 
-![image](https://github.com/user-attachments/assets/a4cf92dc-b8ac-4b40-ab66-73050b1dbb7b)
+![image](https://github.com/user-attachments/assets/b8640aab-c398-46c6-a2de-fc4e169fac6c)
 
-Description: 
+![image](https://github.com/user-attachments/assets/a5e4ebab-f972-42b2-b18e-759d43d9c631)
+
+https://www.tinkercad.com/things/k2SIEZURJmN-xnor-gate-ic
+
+**Description:** 
 
 The 74LS266 IC is similar to 7486 but includes open collector outputs.
 
@@ -699,6 +717,22 @@ Ideal for bus systems and multi-device communication.
 | 13      | 4A       | Input A of XOR Gate 4                 |
 | 14      | Vcc      | Power Supply (+5V)                    |
 
+# Applications of Logic Gates
+
+| **Gate** | **IC Number**                           | **Applications**                                                          |
+| -------- | --------------------------------------- | ------------------------------------------------------------------------- |
+| **AND**  | 7408 (Quad 2-input AND gate)            | **Decision-making** (e.g., **security systems**, **control systems**)     |
+|          | 7432 (Quad 2-input OR gate)             | **Multiplexers** (e.g., selecting input based on conditions)              |
+| **OR**   | 7432 (Quad 2-input OR gate)             | **Alarm systems** (any condition triggering action)                       |
+|          | 7486 (Quad 2-input XOR gate)            | **Control systems** where any input can initiate action                   |
+| **NOT**  | 7404 (Hex inverter)                     | **Inversion circuits** (e.g., **complementary systems**, **flip-flops**)  |
+| **NAND** | 7400 (Quad 2-input NAND gate)           | **Memory storage** (used in **flip-flops**, **latches**)                  |
+|          | 7410 (Triple 3-input NAND gate)         | **Error correction circuits**                                             |
+| **NOR**  | 7402 (Quad 2-input NOR gate)            | **Negative logic circuits** (e.g., **reset systems**, **initialization**) |
+| **XOR**  | 7486 (Quad 2-input XOR gate)            | **Parity checking** (e.g., **error detection** in data transmission)      |
+|          | 7412 (Quad 2-input NAND gate)           | **Digital comparators** (detecting differences between inputs)            |
+| **XNOR** | 7485 (Quad 2-input XNOR gate)           | **Equality checkers** (verifying if two inputs match)                     |
+|          | 74266 (Quad 2-input Exclusive-NOR gate) | **Parity bit generation** (checking for even parity)                      |
 
 
 
