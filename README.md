@@ -459,7 +459,8 @@ Definition:
 ![image](https://github.com/user-attachments/assets/2455c2cf-bf29-486a-8924-e82b508ccce3)
 
 
-# Integrated Circuits-IC's
+# Implemententation of logic Gates Using Integrated Circuits - IC's
+
 
 **What is an IC**
 
@@ -478,6 +479,23 @@ Example: A microprocessor is an example of an IC.
 | NOR       | ↓      | **7402**    | 4 gates            | 14 pins   | 2 inputs per gate                                    |
 | XOR       | ⊕      | **7486**    | 4 gates            | 14 pins   | 2 inputs per gate                                    |
 | XNOR      | ⊙      | **74LS266** | 4 gates            | 14 pins   | 2 inputs per gate (some versions are open-collector) |
+
+# Applications of Logic Gates
+
+| **Gate** | **IC Number**                           | **Applications**                                                          |
+| -------- | --------------------------------------- | ------------------------------------------------------------------------- |
+| **AND**  | 7408 (Quad 2-input AND gate)            | **Decision-making** (e.g., **security systems**, **control systems**)     |
+|          | 7432 (Quad 2-input OR gate)             | **Multiplexers** (e.g., selecting input based on conditions)              |
+| **OR**   | 7432 (Quad 2-input OR gate)             | **Alarm systems** (any condition triggering action)                       |
+|          | 7486 (Quad 2-input XOR gate)            | **Control systems** where any input can initiate action                   |
+| **NOT**  | 7404 (Hex inverter)                     | **Inversion circuits** (e.g., **complementary systems**, **flip-flops**)  |
+| **NAND** | 7400 (Quad 2-input NAND gate)           | **Memory storage** (used in **flip-flops**, **latches**)                  |
+|          | 7410 (Triple 3-input NAND gate)         | **Error correction circuits**                                             |
+| **NOR**  | 7402 (Quad 2-input NOR gate)            | **Negative logic circuits** (e.g., **reset systems**, **initialization**) |
+| **XOR**  | 7486 (Quad 2-input XOR gate)            | **Parity checking** (e.g., **error detection** in data transmission)      |
+|          | 7412 (Quad 2-input NAND gate)           | **Digital comparators** (detecting differences between inputs)            |
+| **XNOR** | 7485 (Quad 2-input XNOR gate)           | **Equality checkers** (verifying if two inputs match)                     |
+|          | 74266 (Quad 2-input Exclusive-NOR gate) | **Parity bit generation** (checking for even parity)                      |
 
 **1. 7408 IC - AND GATE**
 
@@ -729,26 +747,7 @@ Ideal for bus systems and multi-device communication.
 | 13      | 4A       | Input A of XOR Gate 4                 |
 | 14      | Vcc      | Power Supply (+5V)                    |
 
-# Applications of Logic Gates
-
-| **Gate** | **IC Number**                           | **Applications**                                                          |
-| -------- | --------------------------------------- | ------------------------------------------------------------------------- |
-| **AND**  | 7408 (Quad 2-input AND gate)            | **Decision-making** (e.g., **security systems**, **control systems**)     |
-|          | 7432 (Quad 2-input OR gate)             | **Multiplexers** (e.g., selecting input based on conditions)              |
-| **OR**   | 7432 (Quad 2-input OR gate)             | **Alarm systems** (any condition triggering action)                       |
-|          | 7486 (Quad 2-input XOR gate)            | **Control systems** where any input can initiate action                   |
-| **NOT**  | 7404 (Hex inverter)                     | **Inversion circuits** (e.g., **complementary systems**, **flip-flops**)  |
-| **NAND** | 7400 (Quad 2-input NAND gate)           | **Memory storage** (used in **flip-flops**, **latches**)                  |
-|          | 7410 (Triple 3-input NAND gate)         | **Error correction circuits**                                             |
-| **NOR**  | 7402 (Quad 2-input NOR gate)            | **Negative logic circuits** (e.g., **reset systems**, **initialization**) |
-| **XOR**  | 7486 (Quad 2-input XOR gate)            | **Parity checking** (e.g., **error detection** in data transmission)      |
-|          | 7412 (Quad 2-input NAND gate)           | **Digital comparators** (detecting differences between inputs)            |
-| **XNOR** | 7485 (Quad 2-input XNOR gate)           | **Equality checkers** (verifying if two inputs match)                     |
-|          | 74266 (Quad 2-input Exclusive-NOR gate) | **Parity bit generation** (checking for even parity)                      |
-
-# Implemententation of logic Gates
-
-# AND USING NAND GATE
+# IMPLEMENTING AND USING NAND GATE
 
 ![image](https://github.com/user-attachments/assets/e89b17f0-ca74-4bf2-a6ae-30ed21dd4b7d)
 
@@ -756,7 +755,7 @@ Ideal for bus systems and multi-device communication.
 
 https://www.tinkercad.com/things/kUNVNNtWxwI-and-using-nand-gate
 
-# OR USING AND GATE
+# IMPLEMENTING OR USING AND GATE
 
 ![image](https://github.com/user-attachments/assets/472b93a0-19e2-4e3e-9396-2177519b0a08)
 
