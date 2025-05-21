@@ -491,6 +491,8 @@ Example: A microprocessor is an example of an IC.
 
 ![image](https://github.com/user-attachments/assets/3f17982b-8f95-456d-be69-e373ef7143e0)
 
+https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408
+
 Description: The IC 7408 is a Quad 2-Input AND Gate integrated circuit. It is a digital logic IC that contains four independent AND gates, each with two inputs and one output. This IC is part of the 7400 series of TTL (Transistor-Transistor Logic) chips.
 
 Each AND gate in the IC performs the logical AND operation, which outputs HIGH (1) only when both inputs are HIGH (1). Otherwise, the output remains LOW (0).
