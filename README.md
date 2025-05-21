@@ -638,6 +638,9 @@ It is the inverse of the OR gate.
 
 ![image](https://github.com/user-attachments/assets/4cea9ef9-3644-44bb-b3d8-ca285ee95779)
 
+![image](https://github.com/user-attachments/assets/449ce512-7652-4969-8705-bfc3489b160a)
+
+
 Description:
 
 The 7486 IC includes four 2-input XOR (Exclusive OR) gates.
