@@ -678,7 +678,9 @@ It is the inverse of the OR gate.
 
 ![image](https://github.com/user-attachments/assets/d6f3a466-b078-4ba3-86e8-1556eeb4636f)
 
-![image](https://github.com/user-attachments/assets/449ce512-7652-4969-8705-bfc3489b160a)
+<img src="https://github.com/user-attachments/assets/1934a10f-b3d0-421c-885b-1610ecfe2e77" width="500">
+
+
 
 **Tinkercad Link**
 
