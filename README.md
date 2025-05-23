@@ -238,7 +238,6 @@ A NAND gate is a fundamental digital logic gate that outputs false (0) only when
 * It outputs 1 if the inputs are the same (both 0 or both 1).
 * It outputs 0 if the inputs are different.
 
-
 ### Truth Table (2-input XNOR gate):
 
 | Input A | Input B | Output (A XNOR B) |
@@ -299,7 +298,7 @@ Example: A microprocessor is an example of an IC.
 
 **Tinkercad Link**
 
-[Tinkercad](https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408)
+[AND GATE IC Tinkercad](https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408)
 
 **Description:** 
 
@@ -333,7 +332,7 @@ The internal structure of an AND gate IC is made up of many tiny transistors and
 
 **Tinkercad Link**
 
-[Tinkercad](https://www.tinkercad.com/things/7V7teeZ8tZm-or-gate-ic-7432)
+[OR GATE IC Tinkercad](https://www.tinkercad.com/things/7V7teeZ8tZm-or-gate-ic-7432)
 
 **Description:** 
 
@@ -366,7 +365,7 @@ An OR gate IC is a compact electronic device that contains multiple OR gates int
 
 **Tinkercad Link**
 
-[Tinkercad](https://www.tinkercad.com/things/aLN9CwaAC5x-not-gate-ic-7404)
+[NOT GATE IC Tinkercad](https://www.tinkercad.com/things/aLN9CwaAC5x-not-gate-ic-7404)
 
 **Description:** 
 
@@ -399,7 +398,7 @@ A NOT gate IC, also known as an inverter IC, is an integrated circuit that imple
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/je7Ft3yBEBO-nand-gate-ic-7400)
+[NAND GATE IC Tinkercad](https://www.tinkercad.com/things/je7Ft3yBEBO-nand-gate-ic-7400)
 
 **Description:** 
 
@@ -432,7 +431,7 @@ A NAND gate IC is an integrated circuit that contains several NAND gates, which 
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/3FRNHH2hQEo-nor-gate-ic-7402)
+[NOR GATE IC Tinkercad](https://www.tinkercad.com/things/3FRNHH2hQEo-nor-gate-ic-7402)
 
 **Description:**
 
@@ -462,7 +461,7 @@ A NOR gate IC is an integrated circuit that contains multiple NOR gates within a
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/6naD4VcsiNA-xor-gate-ic-7486)
+[XOR GATE IC Tinkercad](https://www.tinkercad.com/things/6naD4VcsiNA-xor-gate-ic-7486)
 
 **Description:**
 
@@ -496,7 +495,7 @@ An XOR (exclusive OR) gate IC is an integrated circuit designed to perform the e
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/k2SIEZURJmN-xnor-gate-ic)
+[XNOR GATE IC Tinkercad](https://www.tinkercad.com/things/k2SIEZURJmN-xnor-gate-ic)
 
 **Description:** 
 
@@ -525,7 +524,7 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/kUNVNNtWxwI-and-using-nand-gate)
+[AND GATE USING NAND GATE Tinkercad](https://www.tinkercad.com/things/kUNVNNtWxwI-and-using-nand-gate)
 
 # IMPLEMENTING OR GATE USING AND GATE
 
@@ -533,7 +532,7 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/endyNZVZ2Ew-or-using-nand)
+[OR GATE USING AND GATE Tinkercad](https://www.tinkercad.com/things/endyNZVZ2Ew-or-using-nand)
 
 # IMPLEMENTING NOT GATE USING NAND GATE
 
@@ -541,7 +540,7 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/6rPcfqVliYz-not-gate-using-nand-gate)
+[NOT GATE USING NAND GATE Tinkercad](https://www.tinkercad.com/things/6rPcfqVliYz-not-gate-using-nand-gate)
 
 # IMPLEMENTING AND GATE USING NOR GATE
 
@@ -549,7 +548,7 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/2GPXqiYO7ux-and-using-nor-gate)
+[AND GATE USING NOR GATE Tinkercad](https://www.tinkercad.com/things/2GPXqiYO7ux-and-using-nor-gate)
 
 # IMPLEMENTING OR GATE USING NOR GATE
 
@@ -557,7 +556,7 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/4ex3zPNHxup-or-gate-using-nor-gate)
+[OR GATE USING NOR GATE Tinkercad](https://www.tinkercad.com/things/4ex3zPNHxup-or-gate-using-nor-gate)
 
 # IMPLEMENTING NOT GATE USING NOR GATE
 
@@ -565,7 +564,7 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 **Tinkercad Link**
 
-[tinkercad](https://www.tinkercad.com/things/f87kXOgLGX0-not-gate-using-nor-gate)
+[NOT GATE USING NOR GATE Tinkercad](https://www.tinkercad.com/things/f87kXOgLGX0-not-gate-using-nor-gate)
 
 
 
