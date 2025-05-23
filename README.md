@@ -531,7 +531,7 @@ Each AND gate in the IC performs the logical AND operation, which outputs HIGH (
 
 **Tinkercad Link**
 
-
+[Tinkercad](https://www.tinkercad.com/things/7V7teeZ8tZm-or-gate-ic-7432)
 
 **Description:** The OR gate IC, commonly represented by the 7432 IC in TTL logic families, contains four independent 2-input OR gates.
 
@@ -564,7 +564,7 @@ An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or bot
 
 **Tinkercad Link**
 
-https://www.tinkercad.com/things/aLN9CwaAC5x-not-gate-ic-7404
+[Tinkercad](https://www.tinkercad.com/things/aLN9CwaAC5x-not-gate-ic-7404)
 
 **Description:** The 7404 IC is a Hex Inverter, meaning it contains 6 independent NOT gates. Each NOT gate takes a single input and outputs the inverted logic level.
 
