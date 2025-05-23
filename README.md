@@ -291,7 +291,6 @@ Octal: **0277**
 Answer: 2F_{16} = 277_8
 
 
-
 # Basic Logic Gates
 
 # 1.AND Gate
@@ -499,7 +498,7 @@ Example: A microprocessor is an example of an IC.
 
 **Tinkercad Link**
 
-https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408
+[Tinkercad](https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408)
 
 **Description:** The IC 7408 is a Quad 2-Input AND Gate integrated circuit. It is a digital logic IC that contains four independent AND gates, each with two inputs and one output. This IC is part of the 7400 series of TTL (Transistor-Transistor Logic) chips.
 
@@ -532,7 +531,7 @@ Each AND gate in the IC performs the logical AND operation, which outputs HIGH (
 
 **Tinkercad Link**
 
-https://www.tinkercad.com/things/7V7teeZ8tZm-or-gate-ic-7432
+
 
 **Description:** The OR gate IC, commonly represented by the 7432 IC in TTL logic families, contains four independent 2-input OR gates.
 
