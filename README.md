@@ -325,7 +325,7 @@ Each AND gate in the IC performs the logical AND operation, which outputs HIGH (
 
 **2. 7432 IC - OR GATE**
 
-![image](https://github.com/user-attachments/assets/6868eaae-936e-43b6-967e-3e11dddb5aa4)
+![image](https://github.com/user-attachments/assets/45198fa7-0d6d-474e-8b99-9e085091077d)
 
 ![image](https://github.com/user-attachments/assets/59c1909c-1fa0-43b4-9f21-da27b86f934a)
 
@@ -358,7 +358,7 @@ An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or bot
 
 **3. 7404 IC - NOT GATE**
 
-![image](https://github.com/user-attachments/assets/75cfb284-c5d9-4912-982b-711228d87f8a)
+![image](https://github.com/user-attachments/assets/13b52922-b8fc-4163-aa58-001da6ee82e8)
 
 ![image](https://github.com/user-attachments/assets/a7a4bae7-19e9-4686-971a-5973ef1bc280)
 
@@ -395,7 +395,7 @@ This IC is commonly used in digital electronics for signal inversion and logical
 
 **4. 7400 IC - NAND GATE**
 
-![image](https://github.com/user-attachments/assets/b3ac7521-b772-4a16-80fe-68542f4ba54b)
+![image](https://github.com/user-attachments/assets/0c98af27-1036-48c9-b111-bc712ced0b48)
 
 ![image](https://github.com/user-attachments/assets/fba78895-ca0f-41b9-923f-918ab8d6d245)
 
@@ -433,7 +433,7 @@ It’s the inverse of the AND gate.
 
 **5. 7402 IC - NOR GATE**
 
-![image](https://github.com/user-attachments/assets/5b1ff97e-eb39-4334-b0f6-dee0806fc290)
+![image](https://github.com/user-attachments/assets/6b2eac61-21c1-4f70-b073-137ba249e327)
 
 ![image](https://github.com/user-attachments/assets/2bf6f9ee-3e20-4dc7-85df-a75dc4760d39)
 
@@ -467,7 +467,7 @@ It is the inverse of the OR gate.
 
 **6. 7486 IC - XOR GATE**
 
-![image](https://github.com/user-attachments/assets/1660dcd3-c61e-4cd9-9954-fa62fd542cb2)
+![image](https://github.com/user-attachments/assets/f0777402-04f9-440b-b2fd-193136e46fd8)
 
 ![image](https://github.com/user-attachments/assets/d6f3a466-b078-4ba3-86e8-1556eeb4636f)
 
@@ -505,7 +505,7 @@ Useful in arithmetic circuits, parity checkers, and logic comparisons.
 
 **7. 74LS266 IC - XNOR GATE**
 
-![image](https://github.com/user-attachments/assets/a3691b04-7d62-4ba2-854e-e9dad0a22665)
+![image](https://github.com/user-attachments/assets/765ea0b9-fe12-4327-b131-ec74b6ddf998)
 
 ![image](https://github.com/user-attachments/assets/b8640aab-c398-46c6-a2de-fc4e169fac6c)
 
@@ -562,11 +562,15 @@ https://www.tinkercad.com/things/endyNZVZ2Ew-or-using-nand
 
 **Tinkercad Link**
 
+https://www.tinkercad.com/things/6rPcfqVliYz-not-gate-using-nand-gate
+
 # IMPLEMENTING AND GATE USING NOR GATE
 
 ![AND USING NOR](https://github.com/user-attachments/assets/105b7216-7458-41af-904a-375f3b1024c7)
 
 **Tinkercad Link**
+
+https://www.tinkercad.com/things/2GPXqiYO7ux-and-using-nor-gate
 
 # IMPLEMENTING OR GATE USING NOR GATE
 
@@ -574,12 +578,15 @@ https://www.tinkercad.com/things/endyNZVZ2Ew-or-using-nand
 
 **Tinkercad Link**
 
+https://www.tinkercad.com/things/4ex3zPNHxup-or-gate-using-nor-gate
+
 # IMPLEMENTING NOT GATE USING NOR GATE
 
 ![NOT USING NOR](https://github.com/user-attachments/assets/c55b53b5-141e-422d-9388-00168cab2d51)
 
 **Tinkercad Link**
 
+https://www.tinkercad.com/things/f87kXOgLGX0-not-gate-using-nor-gate
 
 
 
