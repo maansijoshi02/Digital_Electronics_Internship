@@ -127,7 +127,7 @@ Output is true (1) only when both inputs are true (1).
 
 **Symbol:**
 
-![image](https://github.com/user-attachments/assets/09cb1e97-f756-4b48-be9f-956216a10c82)
+<img src="https://github.com/user-attachments/assets/09cb1e97-f756-4b48-be9f-956216a10c82" width="300" />
 
 # 2.OR Gate
 
@@ -149,7 +149,7 @@ If at least one input is 1, the output is 1.
 
 **Symbol**
 
-![image](https://github.com/user-attachments/assets/ad03011b-8014-42db-aad6-628127139c93)
+<img src="https://github.com/user-attachments/assets/ad03011b-8014-42db-aad6-628127139c93" width="300" />
 
 # 3.NOT Gate
 
@@ -173,13 +173,13 @@ This table shows that the NOT gate simply flips the input value.
 
 **Symbol:**
 
-![image](https://github.com/user-attachments/assets/ac6475a2-44b4-4bc6-b1e9-c6bee62f13c4)
+<img src="https://github.com/user-attachments/assets/ac6475a2-44b4-4bc6-b1e9-c6bee62f13c4" width="300" />
 
 # 4.NAND GATE
 
-A NAND gate is a fundamental digital logic gate that outputs false (0) only when all its inputs are true (1); otherwise, it outputs true (1).
+**Definition**
 
-**Definition:**
+A NAND gate is a fundamental digital logic gate that outputs false (0) only when all its inputs are true (1); otherwise, it outputs true (1).
 
 ### Truth Table (2-input NAND gate):
 
@@ -193,7 +193,7 @@ A NAND gate is a fundamental digital logic gate that outputs false (0) only when
 
 ### Symbol:
 
-![image](https://github.com/user-attachments/assets/43531a7f-350f-4d35-8c37-589b1e89ee99)
+<img src="https://github.com/user-attachments/assets/43531a7f-350f-4d35-8c37-589b1e89ee99" width="300" />
 
 # 5.NOR GATE
 
@@ -212,7 +212,7 @@ A NAND gate is a fundamental digital logic gate that outputs false (0) only when
 
 # Symbol:
 
-![image](https://github.com/user-attachments/assets/9805dcb4-97d2-48ba-912e-6cc9f5932daa)
+<img src="https://github.com/user-attachments/assets/9805dcb4-97d2-48ba-912e-6cc9f5932daa" width="300" />
 
 # 6.XOR GATE
 
@@ -232,7 +232,7 @@ A NAND gate is a fundamental digital logic gate that outputs false (0) only when
 
 ### Symbol: 
 
-![image](https://github.com/user-attachments/assets/8e657000-92e7-4d27-b17d-69acf030fd99)
+<img src="https://github.com/user-attachments/assets/8e657000-92e7-4d27-b17d-69acf030fd99" width="300" />
 
 # 7.XNOR GATE
 
@@ -251,7 +251,7 @@ A NAND gate is a fundamental digital logic gate that outputs false (0) only when
 
 ### Symbol: 
 
-![image](https://github.com/user-attachments/assets/66024712-e907-4684-8b96-588ce7f86d1b)
+<img src="https://github.com/user-attachments/assets/66024712-e907-4684-8b96-588ce7f86d1b" width="300" />
 
 # Implementation of Logic Gates Using Integrated Circuits - IC's
 
