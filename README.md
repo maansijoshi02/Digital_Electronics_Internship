@@ -757,7 +757,7 @@ https://www.tinkercad.com/things/kUNVNNtWxwI-and-using-nand-gate
 https://www.tinkercad.com/things/endyNZVZ2Ew-or-using-nand
 
 
-
+https://www.tinkercad.com/things/gmvaZS65KuE-and-gate-ic-
 
 
 
