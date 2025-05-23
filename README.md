@@ -491,11 +491,11 @@ Example: A microprocessor is an example of an IC.
 
 **1. 7408 IC - AND GATE**
 
-![image](https://github.com/user-attachments/assets/f43bd36c-0e72-4638-a4dc-43ce3a8ea894)
+<img src="https://github.com/user-attachments/assets/f43bd36c-0e72-4638-a4dc-43ce3a8ea894" width="400" />
 
 ![image](https://github.com/user-attachments/assets/10857107-11d2-41a6-80a2-004846ef4059)
 
-![image](https://github.com/user-attachments/assets/558ba018-f846-43de-9cbd-81383cf88f6d)
+<img src="https://github.com/user-attachments/assets/558ba018-f846-43de-9cbd-81383cf88f6d" width="450">
 
 **Tinkercad Link**
 
