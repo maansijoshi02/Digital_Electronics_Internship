@@ -1,7 +1,5 @@
 # Digital Electronics Internship
 
-# Task 1
-
 # Table of contents
 
 - [What is Digital Electronics](#what-is-digital-electronics)
@@ -262,24 +260,24 @@ Example: 65 (Octal) → 110101 (Binary) → 0001 1010 1 = 1A1 (Hex, pad as neede
 
 **12. Hexadecimal to Octal Conversion**
 
-Example: Convert `2F₁₆` to octal
+Example: Convert 2F₁₆ to octal
 
 **Hexa to Binary**
 
 * 2 → 0010
 * F → 1111
 
-Binary: `0010 1111`
+Binary: 0010 1111
 
 **Binary to Octal**
 
 Group into 3 bits (from right):
-`00 101 111` → pad left with zeros → `000 010 111 1`
+00 101 111 → pad left with zeros → 000 010 111 1
 
 Better: pad full groups of 3 bits:
-`000 010 111 111`
+000 010 111 111
 
-Actually, the binary `00101111` padded to 9 bits is `000 010 111 111`
+Actually, the binary 00101111 padded to 9 bits is 000 010 111 111
 
 Groups:
 
@@ -290,13 +288,9 @@ Groups:
 
 Octal: **0277**
 
----
-
 Answer: 2F_{16} = 277_8
 
 
-
-# Task 2
 
 # Basic Logic Gates
 
@@ -308,7 +302,7 @@ Represented as: A AND B = A ⋅ B or A ∧ B
 
 **Truth Table**
 
-|*A*|*B*| *A & B*|
+|**A**|**B**| **A & B**|
 |-----|----|------|
 |0|0|0|
 |0|1|0|
@@ -439,10 +433,8 @@ Definition:
 # 7.XNOR GATE
 
 * It outputs 1 if the inputs are the same (both 0 or both 1).
-* 
 * It outputs 0 if the inputs are different.
 
----
 
 ### Truth Table (2-input XNOR gate):
 
