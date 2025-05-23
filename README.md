@@ -8,7 +8,7 @@
 - [Number Systems](#number-systems)
 - [Conversion between Number Systems](#conversion-between-number-systems)
 - [Basic Logic Gates](#basic-logic-gates)
-- [Integrated Circuits-IC's](#integrated-circuits-ics)
+- [Implementation of Logic Gates Using Integrated Circuits - IC's](#implementation-of-logic-gates-using-integrated-circuits---ics)
  
 # What is Digital Electronics
 
@@ -88,207 +88,20 @@ There are four primary types of number systems used in digital electronics:
 
 # Conversion between number systems 
 
-**1. Binary to Decimal Conversion**
-
-To convert a binary number to a decimal number:
-Multiply each bit by  $2^n$  where n is the position of the bit (starting from 0 on the right) and then sum all the results.
-
-Binary:   1    0    1    1    0    1
-
-Position: 5    4    3    2    1    0
-
-Value:    1×2⁵ + 0×2⁴ + 1×2³ + 1×2² + 0×2¹ + 1×2⁰
-
-   = 32 + 0 + 8 + 4 + 0 + 1 = 4
-
-
-**2. Decimal to Binary Conversion**
-
-To convert a decimal number (base-10) to its binary equivalent (base-2), the division-by-2 method. is used
-
-| Step | Division | Quotient | Remainder |
-| ---- | -------- | -------- | --------- |
-| 1    | 45 ÷ 2   | 22       | 1         |
-| 2    | 22 ÷ 2   | 11       | 0         |
-| 3    | 11 ÷ 2   | 5        | 1         |
-| 4    | 5 ÷ 2    | 2        | 1         |
-| 5    | 2 ÷ 2    | 1        | 0         |
-| 6    | 1 ÷ 2    | 0        | 1         |
-
-**3. Decimal to Octal Conversion**
-
-Binary to Decimal: Convert the binary number to decimal by multiplying each bit by 2 raised to its position index (starting from 0 on the right) and summing the results.
-
-Decimal to Octal: Divide the decimal number by 8 repeatedly, noting the remainders. The octal number is formed by reading the remainders in reverse order.
-
-Example: Convert (101101)₂ to octal
-
-**Binary to Decimal:**
-
-(101101)₂ = 1×2⁵ + 0×2⁴ + 1×2³ + 1×2² + 0×2¹ + 1×2⁰
-
-= 32 + 0 + 8 + 4 + 0 + 1 = 45
-
-**Decimal to Octal:**
-
-45 ÷ 8 = 5 remainder 5
-
-5 ÷ 8 = 0 remainder 5
-
-Octal: Reading remainders in reverse: 5 5 → (55)₈
-
-**4. Octal to Binary Conversions**
-
-Each octal digit corresponds to exactly 3 binary digits (bits).
-
-Convert 157 (octal) to binary:
-
-1 → 001
-
-5 → 101
-
-7 → 111
-
-So, 157₈ = 001101111₂ 
-
-**5. Binary to Hexadecimal Conversion**
-
-Group binary digits into 4-bit chunks starting from the right, then convert each group to its hexadecimal equivalent.
-
-Convert 10110111 (binary) to hexa
-
-Group into 4-bits: 1011 0111
-
-→ 1011 = B
-
-→ 0111 = 7
-
-So, 10110111₂ = B7₁₆
-
-**6. Hexadecimal to Binary Coversion**
-
-Convert 2F (hex) to binary
-
-- 2 → 0010
-
-- F → 1111
-
-So, 2F₁₆ = 00101111₂
-
-**7. Decimal to Octal Conversion**
-
-Example: Decimal to Octal
-
-125 ÷ 8 = 15, remainder 5 
-
-15 ÷ 8  = 1, remainder 7 
-
-1 ÷ 8   = 0, remainder 1
-
-So, 125₁₀ = 175₈
-
-**8. Octal to Decimal Coversion**
-
-To convert octal to decimal, positional notation is used — each digit is multiplied by 8 raised to the power of its position (from right to left, starting at 0).
-
-Example 1: Convert 175&#8328; to decimal
-
-- 1.8&#178;=6
-- 7.8^1=56
-- 5.8^0=5
-
-64+56+5=125
-
-So, 
-175&#178;=125&#10;
-
-**9.Decimal to Hexadecimal Conversion**
-
-Example:
-
-254 ÷ 16 = 15, remainder 14 → E  
-
-15 ÷ 16  = 0, remainder 15 → F
-
-254₁₀ = FE₁₆
-
-**10. Hexadecimal to Decimal Conversion**
-
-Example: Convert 2F to decimal
-
-- F = 15, in the 16^0 place →15×1=15
-
-- 2 = 2, in the 16^1 place → 2×16=32
-
-Add: 32+15=47
-
-2F₁₆ = 47₁₀
-
-**11. Octal to Heexideacimal Conversion**
-
-Example: Convert 175₈ to hexadecimal
-
-**Octal to Binary**
-
-1 → 001
-
-7 → 111
-
-5 → 101
-
-So, 175₈ = 001 111 101₂ → Combine → 001111101
-
-Pad to make full 4-bit groups: 0001 1111 01 → pad left: 0001 1111 0101
-
-Final binary: 0001 1111 0101
-
- **Binary to Hexa**
-
-0001 → 1
-
-1111 → F
-
-0101 → 5
-
-So, 175₈ = 1F5₁₆
-
-Method:
-
-Octal → Binary (3 bits), then Binary → Hex (4 bits).
-
-Example: 65 (Octal) → 110101 (Binary) → 0001 1010 1 = 1A1 (Hex, pad as needed)
-
-**12. Hexadecimal to Octal Conversion**
-
-Example: Convert 2F₁₆ to octal
-
-**Hexa to Binary**
-
-* 2 → 0010
-* F → 1111
-
-Binary: 0010 1111
-
-**Binary to Octal**
-
-Group into 3 bits (from right):
-00 101 111 → pad left with zeros → 000 010 111 1
-
-Better: pad full groups of 3 bits:
-000 010 111 111
-
-Actually, the binary 00101111 padded to 9 bits is 000 010 111 111
-
-Groups:
-
-* 000 → 0
-* 010 → 2
-* 111 → 7
-* 111 → 7
-
-Octal: **0277**
-
-Answer: 2F_{16} = 277_8
+| S.No | Conversion Type        | Example Input | Steps / Explanation                                                                                  | Result     |
+| ---- | ---------------------- | ------------- | ---------------------------------------------------------------------------------------------------- | ---------- |
+| 1    | **Binary to Decimal**      | 101101        | 1×2⁵ + 0×2⁴ + 1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 32 + 0 + 8 + 4 + 0 + 1                                 | 45₁₀       |
+| 2    | **Decimal to Binary**      | 45            | Division by 2: Remainders → 1 0 1 1 0 1 (read bottom-up)                                         | 101101₂    |
+| 3    | **Decimal to Octal**       | 45            | 45 ÷ 8 = 5 R5 → 5 ÷ 8 = 0 R5 → Octal = Reverse of remainders                                     | 55₈        |
+| 4    | **Octal to Binary**        | 157₈          | 1 → 001, 5 → 101, 7 → 111 → Combine: 001101111                                                   | 001101111₂ |
+| 5    | **Binary to Hexadecimal**  | 10110111      | Group: 1011 (B), 0111 (7)                                                                        | B7₁₆       |
+| 6    | **Hexadecimal to Binary**  | 2F₁₆          | 2 → 0010, F → 1111 → 00101111                                                                    | 00101111₂  |
+| 7    | **Decimal to Octal**       | 125           | 125 ÷ 8 = 15 R5 → 15 ÷ 8 = 1 R7 → 1 ÷ 8 = 0 R1 → Reverse remainders                              | 175₈       |
+| 8    | **Octal to Decimal**       | 175₈          | 1×8² + 7×8¹ + 5×8⁰ = 64 + 56 + 5                                                                 | 125₁₀      |
+| 9    | **Decimal to Hexadecimal** | 254           | 254 ÷ 16 = 15 R14 (E), 15 ÷ 16 = 0 R15 (F) → Reverse remainders                                  | FE₁₆       |
+| 10   | **Hexadecimal to Decimal** | 2F₁₆          | 2×16¹ + F(15)×16⁰ = 32 + 15                                                                      | 47₁₀       |
+| 11   | **Octal to Hexadecimal**   | 175₈          | Octal → Binary: 001 111 101 = 001111101₂ → Pad: 0001 1111 0101 → 1F5                             | 1F5₁₆      |
+| 12   | **Hexadecimal to Octal**   | 2F₁₆          | Hex → Binary: 2 = 0010, F = 1111 → 00101111 → Pad into 3-bit: 000 010 111 111 → Groups = 0 2 7 7 | 277₈       |
 
 
 # Basic Logic Gates
@@ -450,7 +263,7 @@ Definition:
 ![image](https://github.com/user-attachments/assets/2455c2cf-bf29-486a-8924-e82b508ccce3)
 
 
-# Implemententation of logic Gates Using Integrated Circuits - IC's
+# Implementation of Logic Gates Using Integrated Circuits - IC's
 
 
 **What is an IC**
@@ -494,7 +307,7 @@ Example: A microprocessor is an example of an IC.
 
 ![image](https://github.com/user-attachments/assets/10857107-11d2-41a6-80a2-004846ef4059)
 
-<img src="https://github.com/user-attachments/assets/558ba018-f846-43de-9cbd-81383cf88f6d" width="450">
+![AND](https://github.com/user-attachments/assets/305fc134-0193-4dd4-a5b2-cf767b598a12)
 
 **Tinkercad Link**
 
@@ -527,7 +340,7 @@ Each AND gate in the IC performs the logical AND operation, which outputs HIGH (
 
 ![image](https://github.com/user-attachments/assets/59c1909c-1fa0-43b4-9f21-da27b86f934a)
 
-![image](https://github.com/user-attachments/assets/078ea68b-099b-4fed-a30f-0421827c5ca3)
+![OR](https://github.com/user-attachments/assets/c91661ec-7f6a-4978-9fcf-5ba597fec2f6)
 
 **Tinkercad Link**
 
@@ -560,7 +373,7 @@ An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or bot
 
 ![image](https://github.com/user-attachments/assets/a7a4bae7-19e9-4686-971a-5973ef1bc280)
 
-![image](https://github.com/user-attachments/assets/4125c024-2a12-4a1f-bc57-4d8a065d119a)
+![NOT](https://github.com/user-attachments/assets/7e84fd3b-b218-443b-bf43-c94e035c6928)
 
 **Tinkercad Link**
 
@@ -597,7 +410,7 @@ This IC is commonly used in digital electronics for signal inversion and logical
 
 ![image](https://github.com/user-attachments/assets/fba78895-ca0f-41b9-923f-918ab8d6d245)
 
-![image](https://github.com/user-attachments/assets/f1739f57-4cba-4304-a290-04fa33970c57)
+![NAND](https://github.com/user-attachments/assets/3c647af5-7428-4740-b76c-fff9415152fe)
 
 **Tinkercad Link**
 
@@ -635,7 +448,7 @@ It’s the inverse of the AND gate.
 
 ![image](https://github.com/user-attachments/assets/2bf6f9ee-3e20-4dc7-85df-a75dc4760d39)
 
-![image](https://github.com/user-attachments/assets/a79c16c2-e00d-42d0-b21b-7f43bb4bce5a)
+![NOR](https://github.com/user-attachments/assets/a52c5be0-642e-4246-9513-cd99df8b0a67)
 
 **Tinkercad Link**
 
@@ -669,9 +482,7 @@ It is the inverse of the OR gate.
 
 ![image](https://github.com/user-attachments/assets/d6f3a466-b078-4ba3-86e8-1556eeb4636f)
 
-<img src="https://github.com/user-attachments/assets/1934a10f-b3d0-421c-885b-1610ecfe2e77" width="500">
-
-
+![XOR](https://github.com/user-attachments/assets/4992fbad-d5ea-466d-8b38-83b03535e1c3)
 
 **Tinkercad Link**
 
@@ -709,7 +520,7 @@ Useful in arithmetic circuits, parity checkers, and logic comparisons.
 
 ![image](https://github.com/user-attachments/assets/b8640aab-c398-46c6-a2de-fc4e169fac6c)
 
-![image](https://github.com/user-attachments/assets/a5e4ebab-f972-42b2-b18e-759d43d9c631)
+![XNOR](https://github.com/user-attachments/assets/6f32e846-d99c-436a-b6b4-734d8e8de14f)
 
 **Tinkercad Link**
 
@@ -740,22 +551,45 @@ Ideal for bus systems and multi-device communication.
 | 13      | 4A       | Input A of XOR Gate 4                 |
 | 14      | Vcc      | Power Supply (+5V)                    |
 
-# IMPLEMENTING AND USING NAND GATE
+# IMPLEMENTING AND GATE USING NAND GATE
 
-![image](https://github.com/user-attachments/assets/e89b17f0-ca74-4bf2-a6ae-30ed21dd4b7d)
+![AND USING NAND](https://github.com/user-attachments/assets/8221c86a-edd1-4cc4-bc38-f89cd42c2f18)
 
 **Tinkercad Link**
 
 https://www.tinkercad.com/things/kUNVNNtWxwI-and-using-nand-gate
 
-# IMPLEMENTING OR USING AND GATE
+# IMPLEMENTING OR GATE USING AND GATE
 
-![image](https://github.com/user-attachments/assets/472b93a0-19e2-4e3e-9396-2177519b0a08)
+![OR USING NAND](https://github.com/user-attachments/assets/3a6f18eb-aff8-4273-8729-cbd5a98480fd)
 
 **Tinkercad Link**
 
 https://www.tinkercad.com/things/endyNZVZ2Ew-or-using-nand
 
+# IMPLEMENTING NOT GATE USING NAND GATE
+
+![NOT USING NAND](https://github.com/user-attachments/assets/37715abf-697f-452e-aff8-5ba267f1bcd7)
+
+**Tinkercad Link**
+
+# IMPLEMENTING AND GATE USING NOR GATE
+
+![AND USING NOR](https://github.com/user-attachments/assets/105b7216-7458-41af-904a-375f3b1024c7)
+
+**Tinkercad Link**
+
+# IMPLEMENTING OR GATE USING NOR GATE
+
+![OR USING NOR](https://github.com/user-attachments/assets/e3c69e74-ba24-4e1a-a62b-a18b9fcea033)
+
+**Tinkercad Link**
+
+# IMPLEMENTING NOT GATE USING NOR GATE
+
+![NOT USING NOR](https://github.com/user-attachments/assets/c55b53b5-141e-422d-9388-00168cab2d51)
+
+**Tinkercad Link**
 
 
 
