@@ -209,7 +209,6 @@ A NAND gate is a fundamental digital logic gate that outputs false (0) only when
 | 1       | 0       | 0                |
 | 1       | 1       | 0                |
 
-
 # Symbol:
 
 <img src="https://github.com/user-attachments/assets/9805dcb4-97d2-48ba-912e-6cc9f5932daa" width="300" />
@@ -302,9 +301,10 @@ Example: A microprocessor is an example of an IC.
 
 [Tinkercad](https://www.tinkercad.com/things/hgTs2riGofA-and-gate-ic-7408)
 
-**Description:** The IC 7408 is a Quad 2-Input AND Gate integrated circuit. It is a digital logic IC that contains four independent AND gates, each with two inputs and one output. This IC is part of the 7400 series of TTL (Transistor-Transistor Logic) chips.
+**Description:** 
 
-Each AND gate in the IC performs the logical AND operation, which outputs HIGH (1) only when both inputs are HIGH (1). Otherwise, the output remains LOW (0).
+An AND gate IC is an integrated circuit that contains multiple AND gates on a single chip. An AND gate is a fundamental digital logic gate that outputs a HIGH signal (1) only when all of its inputs are HIGH. The IC is designed to perform this logical operation electrically.
+The internal structure of an AND gate IC is made up of many tiny transistors and other electronic components etched onto a small piece of silicon. These transistors work together to control the flow of electrical signals based on the inputs, producing the correct output according to the AND logic function.
 
 | **Pin No.** | **Name** | **Description**                  |
 | ----------- | -------- | -------------------------------- |
@@ -335,9 +335,9 @@ Each AND gate in the IC performs the logical AND operation, which outputs HIGH (
 
 [Tinkercad](https://www.tinkercad.com/things/7V7teeZ8tZm-or-gate-ic-7432)
 
-**Description:** The OR gate IC, commonly represented by the 7432 IC in TTL logic families, contains four independent 2-input OR gates.
+**Description:** 
 
-An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or both of its inputs are HIGH (1). It only outputs LOW (0) when all inputs are LOW (0).
+An OR gate IC is a compact electronic device that contains multiple OR gates integrated onto a single silicon chip. An OR gate is a basic digital logic gate that outputs a HIGH signal (1) if at least one of its inputs is HIGH. The internal circuitry of the OR gate IC is designed to perform this logical operation efficiently using semiconductor components. Inside the IC, millions of tiny transistors and other electronic elements are arranged in such a way that they manipulate electrical signals according to the OR logic. When one or more input signals are at a HIGH voltage level, the transistors inside the IC allow the output to be pulled to a HIGH state. Conversely, if all inputs are LOW, the output remains LOW.
 
 | **Pin Number** | **Pin Name** | **Description**             |
 | -------------- | ------------ | --------------------------- |
@@ -368,13 +368,9 @@ An OR gate is a basic digital logic gate that outputs HIGH (1) if any one or bot
 
 [Tinkercad](https://www.tinkercad.com/things/aLN9CwaAC5x-not-gate-ic-7404)
 
-**Description:** The 7404 IC is a Hex Inverter, meaning it contains 6 independent NOT gates. Each NOT gate takes a single input and outputs the inverted logic level.
+**Description:** 
 
-If the input is HIGH (1), the output is LOW (0).
-
-If the input is LOW (0), the output is HIGH (1).
-
-This IC is commonly used in digital electronics for signal inversion and logical negation.
+A NOT gate IC, also known as an inverter IC, is an integrated circuit that implements the NOT logic function. The NOT gate takes a single input and produces an output that is the logical complement or inversion of the input signal. In other words, if the input is HIGH (1), the output will be LOW (0), and if the input is LOW (0), the output will be HIGH (1). Inside the IC, this inversion is achieved through a combination of transistors arranged in such a way that the output voltage is opposite to the input voltage. The IC is typically built using semiconductor fabrication technologies such as TTL (Transistor-Transistor Logic) or CMOS (Complementary Metal-Oxide-Semiconductor), which allow the creation of multiple NOT gates on a single silicon chip. For example, the 7404 IC contains six independent NOT gates. 
 
 | Pin No. | Pin Name | Description          |
 | ------- | -------- | -------------------- |
@@ -405,14 +401,9 @@ This IC is commonly used in digital electronics for signal inversion and logical
 
 [tinkercad](https://www.tinkercad.com/things/je7Ft3yBEBO-nand-gate-ic-7400)
 
-**Description:** The 7400 IC is a quad 2-input NAND gate integrated circuit. It contains four independent NAND gates, each having two inputs and one output. This IC belongs to the 7400 TTL logic family, widely used in digital electronics.
+**Description:** 
 
-How the NAND Gate Works:
-A NAND gate gives a LOW (0) output only when both inputs are HIGH (1).
-
-In all other cases, the output is HIGH (1).
-
-It’s the inverse of the AND gate.
+A NAND gate IC is an integrated circuit that contains several NAND gates, which are fundamental building blocks in digital electronics. A NAND gate produces an output that is LOW only when all its inputs are HIGH; otherwise, its output is HIGH. Essentially, it is the complement of the AND gate. Inside the NAND gate IC, the logic operation is realized using a network of transistors and other semiconductor components fabricated on a tiny silicon chip. These components are arranged so that the electrical signals applied at the inputs control the flow of current through the transistors, determining the output voltage level according to the NAND logic.
 
 | Pin No. | Pin Name | Description            |
 | ------- | -------- | ---------------------- |
@@ -445,11 +436,7 @@ It’s the inverse of the AND gate.
 
 **Description:**
 
-The 7402 IC contains four independent 2-input NOR gates.
-
-A NOR gate gives a HIGH output only when both inputs are LOW.
-
-It is the inverse of the OR gate.
+A NOR gate IC is an integrated circuit that contains multiple NOR gates within a single semiconductor chip. A NOR gate is a basic digital logic gate that produces a HIGH output only when all its inputs are LOW. If any of the inputs are HIGH, the output will be LOW. Essentially, the NOR gate combines the functions of an OR gate followed by a NOT gate, meaning it outputs the inverse of the OR operation. Inside the NOR gate IC, tiny electronic components such as transistors are fabricated on a silicon wafer using semiconductor manufacturing processes. These transistors are interconnected in a way that enables them to perform the NOR logic function. When electrical signals representing logical values (HIGH or LOW) are applied to the inputs, the transistors switch states to control the flow of current, thereby determining the output signal.
 
 | Pin No. | Pin Name | Description           |
 | ------- | -------- | --------------------- |
@@ -479,10 +466,7 @@ It is the inverse of the OR gate.
 
 **Description:**
 
-The 7486 IC includes four 2-input XOR (Exclusive OR) gates.
-XOR gates output HIGH only when inputs are different.
-
-Useful in arithmetic circuits, parity checkers, and logic comparisons.
+An XOR (exclusive OR) gate IC is an integrated circuit designed to perform the exclusive OR logical operation on its inputs. The XOR gate outputs a HIGH signal only when an odd number of its inputs are HIGH; for two inputs, this means the output is HIGH if exactly one input is HIGH, and LOW if both inputs are the same (both HIGH or both LOW). Inside the XOR gate IC, tiny semiconductor devices such as transistors are arranged in a specific configuration that allows the chip to perform this function. These transistors control the flow of electric current based on the inputs, ensuring that the output accurately reflects the XOR logic.
 
 | Pin No. | Pin Name | Description           |
 | ------- | -------- | --------------------- |
@@ -516,11 +500,7 @@ Useful in arithmetic circuits, parity checkers, and logic comparisons.
 
 **Description:** 
 
-The 74LS266 IC is similar to 7486 but includes open collector outputs.
-
-Open collector allows multiple gate outputs to be connected together (wired-AND logic).
-
-Ideal for bus systems and multi-device communication.
+An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (exclusive-NOR) logic gates on a single silicon chip. The XNOR gate is a fundamental digital logic gate that outputs a HIGH signal only when its inputs are equal — either both HIGH or both LOW. In other words, it performs the logical equivalence operation. Inside the XNOR gate IC, the logic function is realized by a network of transistors and other semiconductor components fabricated on a small piece of silicon. These transistors are arranged so that they control the flow of electrical current to produce the correct output depending on the inputs.
 
 | Pin No. | Pin Name | Description                           |
 | ------- | -------- | ------------------------------------- |
