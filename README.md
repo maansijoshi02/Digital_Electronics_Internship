@@ -9,7 +9,8 @@
 - [Conversion between Number Systems](#conversion-between-number-systems)
 - [Basic Logic Gates](#basic-logic-gates)
 - [Implementation of Logic Gates Using Integrated Circuits - IC's](#implementation-of-logic-gates-using-integrated-circuits---ics)
- 
+- [IMPLEMENTATION OF HALF ADDER](#implementation-of-half-adder)
+
 # What is Digital Electronics
 
 Digital electronics is a branch of electronics that deals with systems and devices that use digital signals, which are discrete representations of data, 
@@ -565,6 +566,53 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 **Tinkercad Link**
 
 [NOT GATE USING NOR GATE Tinkercad](https://www.tinkercad.com/things/f87kXOgLGX0-not-gate-using-nor-gate)
+
+# IMPLEMENTATION OF HALF ADDER 
+
+**Block Diagram**
+
+![image](https://github.com/user-attachments/assets/b3281d2e-194d-45fb-a6ee-758a5357633c)
+
+<img src="https://github.com/user-attachments/assets/1c308a20-f36d-4127-be96-9b0b008262ab" width="400"/>
+
+**Tinkercad Link**
+
+[Half Adder Tinkercad](https://www.tinkercad.com/things/gebKFc0umAi-half-adder-using-nand-gate)
+
+# Half Adder Using 7400 NAND ICs Connection Table
+
+| **From Pin**       | **To Pin**             | **Purpose**                                       |
+|--------------------|------------------------|---------------------------------------------------|
+| Pin 1              | Input A (Switch)       | First input to NAND1                              |
+| Pin 2              | Input B (Switch)       | Second input to NAND1                             |
+| Pin 3              | Pin 5                  | Output of NAND1 → input of NAND2                  |
+| Pin 3              | Pin 10                 | Output of NAND1 → input of NAND3                  |
+| Pin 4              | Input A (Switch)       | A again for NAND2                                 |
+| Pin 6              | Pin 12                 | Output of NAND2 → input of NAND4                  |
+| Pin 9              | Input B (Switch)       | B again for NAND3                                 |
+| Pin 8              | Pin 13                 | Output of NAND3 → input of NAND4                  |
+| Pin 11             | LED (Sum Output)       | Final XOR (SUM) output                            |
+| Pin 3              | Pin 1 (2nd IC)         | NAND1 output → both inputs of NAND5               |
+| Pin 3              | Pin 2 (2nd IC)         | Used again for generating CARRY                   |
+| Pin 3 (2nd IC)     | LED (Carry Output)     | Output of NAND5 = CARRY                           |
+| Pin 14             | +5V                    | Power (VCC)                                       |
+| Pin 7              | GND                    | Ground                                            |
+
+**Description**
+
+-Pin 3 provides the Carry output.
+
+-Pin 6 can be used as part of Sum (XOR) if extended with additional NANDs.
+
+**Half Adder Truth Table**
+
+| A | B | SUM (A ⊕ B) | CARRY (A · B) |
+| - | - | ----------- | ------------- |
+| 0 | 0 | 0           | 0             |
+| 0 | 1 | 1           | 0             |
+| 1 | 0 | 1           | 0             |
+| 1 | 1 | 0           | 1             |
+
 
 
 
