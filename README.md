@@ -536,7 +536,7 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 # IMPLEMENTING NOT GATE USING NAND GATE
 
-<img src="https://github.com/user-attachments/assets/37715abf-697f-452e-aff8-5ba267f1bcd7" width="400" />
+<img src="https://github.com/user-attachments/assets/23993339-7e02-4b53-adde-b7e567db1fb1" width="400"/>
 
 **Tinkercad Link**
 
