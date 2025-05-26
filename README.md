@@ -10,6 +10,7 @@
 - [Basic Logic Gates](#basic-logic-gates)
 - [Implementation of Logic Gates Using Integrated Circuits - IC's](#implementation-of-logic-gates-using-integrated-circuits---ics)
 - [IMPLEMENTATION OF HALF ADDER](#implementation-of-half-adder)
+- [IMPLEMENTATION OF FULL ADDER](#implementation-of-full-adder)
 
 # What is Digital Electronics
 
@@ -581,22 +582,25 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 # Half Adder Using 7400 NAND ICs Connection Table
 
-| **From Pin**       | **To Pin**             | **Purpose**                                       |
-|--------------------|------------------------|---------------------------------------------------|
-| Pin 1              | Input A (Switch)       | First input to NAND1                              |
-| Pin 2              | Input B (Switch)       | Second input to NAND1                             |
-| Pin 3              | Pin 5                  | Output of NAND1 → input of NAND2                  |
-| Pin 3              | Pin 10                 | Output of NAND1 → input of NAND3                  |
-| Pin 4              | Input A (Switch)       | A again for NAND2                                 |
-| Pin 6              | Pin 12                 | Output of NAND2 → input of NAND4                  |
-| Pin 9              | Input B (Switch)       | B again for NAND3                                 |
-| Pin 8              | Pin 13                 | Output of NAND3 → input of NAND4                  |
-| Pin 11             | LED (Sum Output)       | Final XOR (SUM) output                            |
-| Pin 3              | Pin 1 (2nd IC)         | NAND1 output → both inputs of NAND5               |
-| Pin 3              | Pin 2 (2nd IC)         | Used again for generating CARRY                   |
-| Pin 3 (2nd IC)     | LED (Carry Output)     | Output of NAND5 = CARRY                           |
-| Pin 14             | +5V                    | Power (VCC)                                       |
-| Pin 7              | GND                    | Ground                                            |
+| **From Pin**      | **To Pin**            | **Purpose**                         |
+| ----------------- | --------------------- | ----------------------------------- |
+| DIP Switch 1      | Pin 1 (IC1 - 74HC00)  | Input A to NAND1                    |
+| DIP Switch 2      | Pin 2 (IC1)           | Input B to NAND1                    |
+| Pin 3 (IC1)       | Pin 4 (IC1)           | Output of NAND1 to input of NAND2   |
+| DIP Switch 1      | Pin 5 (IC1)           | A again to NAND2                    |
+| Pin 6 (IC1)       | Pin 9 (IC1)           | Output of NAND2 to input of NAND3   |
+| DIP Switch 2      | Pin 10 (IC1)          | B again to NAND3                    |
+| Pin 8 (IC1)       | Pin 12 (IC1)          | Output of NAND3 to NAND4            |
+| Pin 3 (IC1)       | Pin 13 (IC1)          | NAND1 output to NAND4               |
+| Pin 11 (IC1)      | LED (Sum Output)      | Output of NAND4 = Final SUM         |
+| DIP Switch 3      | Pin 1 (IC2 - 74HC00)  | Carry-in to NAND5                   |
+| Pin 11 (IC1)      | Pin 2 (IC2)           | SUM (from NAND4) to NAND5 for Carry |
+| Pin 3 (IC2)       | Pin 4 (IC2)           | Output of NAND5 to input of NAND6   |
+| DIP Switch 3      | Pin 5 (IC2)           | Cin again to NAND6                  |
+| Pin 6 (IC2)       | LED (Carry Output)    | Final Carry Output                  |
+| Pin 14 (both ICs) | +5V (Red Power Rail)  | VCC to both NAND ICs                |
+| Pin 7 (both ICs)  | GND (Blue Power Rail) | Ground to both NAND ICs             |
+
 
 **Description**
 
@@ -612,6 +616,52 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 | 0 | 1 | 1           | 0             |
 | 1 | 0 | 1           | 0             |
 | 1 | 1 | 0           | 1             |
+
+# IMPLEMENTATION OF FULL ADDER
+
+**Block Diagram**
+
+![image](https://github.com/user-attachments/assets/c754fea3-4635-4134-bddf-13a2e1e1f024)
+
+<img src="https://github.com/user-attachments/assets/28b17c96-f44b-4707-9038-4449f508b507" width="600"/>
+
+**Tinkercad Link**
+
+[FULL ADDER USING NOR GATE Tinkercad](https://www.tinkercad.com/things/hZOS6CWrOht-full-adder-using-nor-gate)
+
+**Full Adder Using 7402 NOR GATE IC's Connection Table**
+
+| **From Pin**     | **To Pin**           | **Purpose**                                         |
+| ---------------- | -------------------- | --------------------------------------------------- |
+| DIP Switch 1     | Pin 1 (IC1 - 74HC02) | Input A to NOR gate 1                               |
+| DIP Switch 2     | Pin 2 (IC1)          | Input B to NOR gate 1                               |
+| Pin 3 (IC1)      | Pin 5 (IC1)          | Output of NOR1 → input of NOR2                      |
+| Pin 3 (IC1)      | Pin 10 (IC2)         | Output of NOR1 → input of NOR3                      |
+| DIP Switch 1     | Pin 4 (IC1)          | A again to input of NOR2                            |
+| Pin 6 (IC1)      | Pin 12 (IC2)         | Output of NOR2 → input of NOR4                      |
+| DIP Switch 2     | Pin 9 (IC2)          | B again to input of NOR3                            |
+| Pin 8 (IC2)      | Pin 13 (IC2)         | Output of NOR3 → input of NOR4                      |
+| Pin 11 (IC2)     | LED (Sum Output)     | Output of NOR4 = Final XOR (SUM)                    |
+| DIP Switch 3     | Pin 2 (IC3)          | Carry-in to NOR6 input                              |
+| Pin 3 (IC1)      | Pin 1 (IC3)          | Output of NOR1 → input to NOR6 for carry generation |
+| Pin 3 (IC3)      | Pin 5 (IC3)          | Output of NOR6 → input of NOR7                      |
+| DIP Switch 3     | Pin 4 (IC3)          | Carry-in again → input of NOR7                      |
+| Pin 6 (IC3)      | LED (Carry Output)   | Output of NOR7 = Final Carry                        |
+| Pin 14 (all ICs) | +5V (Red rail)       | Power supply to all ICs                             |
+| Pin 7 (all ICs)  | GND (Blue rail)      | Ground connection to all ICs                        |
+
+**Full Adder Truth Table**
+
+| **A** | **B** | **Cin** | **Sum** | **Carry** |
+| :---: | :---: | :-----: | :-----: | :-------: |
+|   0   |   0   |    0    |    0    |     0     |
+|   0   |   0   |    1    |    1    |     0     |
+|   0   |   1   |    0    |    1    |     0     |
+|   0   |   1   |    1    |    0    |     1     |
+|   1   |   0   |    0    |    1    |     0     |
+|   1   |   0   |    1    |    0    |     1     |
+|   1   |   1   |    0    |    0    |     1     |
+|   1   |   1   |    1    |    1    |     1     |
 
 
 
