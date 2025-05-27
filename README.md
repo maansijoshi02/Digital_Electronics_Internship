@@ -624,10 +624,14 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 <img src="https://github.com/user-attachments/assets/c953c83c-eda8-47da-93f4-37da31debd65" width="500" />
 
+
+**Full Adder Using XOR, AND, OR GATES**
+
 <img src="https://github.com/user-attachments/assets/ef2f6063-a8e8-462e-b95a-a65bae5c8e1c" width="600" />
 
-<img src="https://github.com/user-attachments/assets/809760f8-21ad-4e9a-b373-cdbdae06f6ad" width="600" />
+**Full Adder Using NOR GATE**
 
+<img src="https://github.com/user-attachments/assets/809760f8-21ad-4e9a-b373-cdbdae06f6ad" width="600" />
 
 **Tinkercad Link**
 
