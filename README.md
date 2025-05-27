@@ -11,6 +11,7 @@
 - [Implementation of Logic Gates Using Integrated Circuits - IC's](#implementation-of-logic-gates-using-integrated-circuits---ics)
 - [IMPLEMENTATION OF HALF ADDER](#implementation-of-half-adder)
 - [IMPLEMENTATION OF FULL ADDER](#implementation-of-full-adder)
+- [MULTIPLEXERS](#multiplexers)
 
 # What is Digital Electronics
 
@@ -663,6 +664,58 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 |   1   |   0   |    1    |    0    |     1     |
 |   1   |   1   |    0    |    0    |     1     |
 |   1   |   1   |    1    |    1    |     1     |
+
+# MULTIPLEXERS
+
+**2x1 MULTIPLEXER**
+
+**Block Diagram**
+
+<img src="https://github.com/user-attachments/assets/c18f0a6c-9b4d-41ef-8237-76baae7637e7" width="600">
+
+<img src="https://github.com/user-attachments/assets/2ba58f68-9fa6-44ab-b9d1-0d9380858168" width="600"/>
+
+**Tinkercad Link**
+
+[2x1 Multiplexer Tinkercad](https://www.tinkercad.com/things/0d5xd9rGBOn-2x1-multiplexer)
+
+**2x1 Multiplexer Pin to Pin Connection Table**
+
+| **From Pin**     | **To Pin**           | **Purpose**                             |
+| ---------------- | -------------------- | --------------------------------------- |
+| DIP Switch 1     | Pin 1 (IC1 - 74HC02) | Input A to NOR gate 1                   |
+| DIP Switch 2     | Pin 2 (IC1)          | Input B to NOR gate 1                   |
+| Pin 3 (IC1)      | Pin 5 (IC1)          | Output of NOR1 → input of NOR2          |
+| Pin 3 (IC1)      | Pin 10 (IC2)         | Output of NOR1 → input of NOR3          |
+| DIP Switch 1     | Pin 4 (IC1)          | A again → input of NOR2                 |
+| Pin 6 (IC1)      | Pin 12 (IC2)         | Output of NOR2 → input of NOR4          |
+| DIP Switch 2     | Pin 9 (IC2)          | B again → input of NOR3                 |
+| Pin 8 (IC2)      | Pin 13 (IC2)         | Output of NOR3 → input of NOR4          |
+| Pin 11 (IC2)     | LED (Sum Output)     | Output of NOR4 = Final XOR → SUM output |
+| DIP Switch 3     | Pin 2 (IC3)          | Carry-in to NOR6 input                  |
+| Pin 3 (IC1)      | Pin 1 (IC3)          | Output of NOR1 → input of NOR6          |
+| Pin 3 (IC3)      | Pin 5 (IC3)          | Output of NOR6 → input of NOR7          |
+| DIP Switch 3     | Pin 4 (IC3)          | Carry-in again → input of NOR7          |
+| Pin 6 (IC3)      | LED (Carry Output)   | Output of NOR7 = Final Carry            |
+| Pin 14 (all ICs) | +5V (Red rail)       | Power supply to all ICs                 |
+| Pin 7 (all ICs)  | GND (Blue rail)      | Ground connection to all ICs            |
+
+**Truth Table**
+
+| **SL (Select Line)** | **IN1** | **IN2** | **OUT** |
+| -------------------- | ------- | ------- | ------- |
+| 0                    | 0       | 0       | 0       |
+| 0                    | 0       | 1       | 0       |
+| 0                    | 1       | 0       | 1       |
+| 0                    | 1       | 1       | 1       |
+| 1                    | 0       | 0       | 0       |
+| 1                    | 0       | 1       | 1       |
+| 1                    | 1       | 0       | 0       |
+| 1                    | 1       | 1       | 1       |
+
+
+
+
 
 
 
