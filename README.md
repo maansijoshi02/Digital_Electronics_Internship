@@ -580,7 +580,7 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 [Half Adder Tinkercad](https://www.tinkercad.com/things/gebKFc0umAi-half-adder-using-nand-gate)
 
-# Half Adder Using 7400 NAND ICs Connection Table
+**Half Adder Using 7400 NAND ICs Connection Table**
 
 | **From Pin**      | **To Pin**            | **Purpose**                         |
 | ----------------- | --------------------- | ----------------------------------- |
@@ -621,9 +621,10 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 **Block Diagram**
 
-![image](https://github.com/user-attachments/assets/c754fea3-4635-4134-bddf-13a2e1e1f024)
+![17483156799361670791318890079985](https://github.com/user-attachments/assets/c953c83c-eda8-47da-93f4-37da31debd65)
 
-<img src="https://github.com/user-attachments/assets/28b17c96-f44b-4707-9038-4449f508b507" width="600"/>
+<img src="https://github.com/user-attachments/assets/809760f8-21ad-4e9a-b373-cdbdae06f6ad" width="600" />
+
 
 **Tinkercad Link**
 
