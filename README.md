@@ -12,7 +12,8 @@
 - [IMPLEMENTATION OF HALF ADDER](#implementation-of-half-adder)
 - [IMPLEMENTATION OF FULL ADDER](#implementation-of-full-adder)
 - [MULTIPLEXERS](#multiplexers)
-- [2×1 MULTIPLEXER](#2x1-multiplexers)
+- [2x1-multiplexer](#2x1-multiplexer)
+
 
 
 # What is Digital Electronics
