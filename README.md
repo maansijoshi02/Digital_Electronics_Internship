@@ -12,7 +12,7 @@
 - [IMPLEMENTATION OF HALF ADDER](#implementation-of-half-adder)
 - [IMPLEMENTATION OF FULL ADDER](#implementation-of-full-adder)
 - [MULTIPLEXERS](#multiplexers)
-- [2×1 MULTIPLEXER](https://github.com/user-attachments/assets/your-image-id)
+- [2×1 MULTIPLEXER](#2x1-multiplexers)
 
 
 # What is Digital Electronics
