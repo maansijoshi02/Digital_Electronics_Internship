@@ -12,6 +12,8 @@
 - [IMPLEMENTATION OF HALF ADDER](#implementation-of-half-adder)
 - [IMPLEMENTATION OF FULL ADDER](#implementation-of-full-adder)
 - [MULTIPLEXERS](#multiplexers)
+- [2×1 MULTIPLEXER](https://github.com/user-attachments/assets/your-image-id)
+
 
 # What is Digital Electronics
 
@@ -673,7 +675,46 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 
 # MULTIPLEXERS
 
-**2x1 MULTIPLEXER**
+**What is Multiplexers**
+
+A multiplexer (MUX) is a logic circuit that selects one of several input signals and directs it to a single output. It acts like a digital switch, choosing which input to forward based on a selection input. Multiplexers are commonly used in digital logic circuits to handle multiple data inputs and route them to a single output line. 
+
+**Key Characteristics of a Multiplexer:**
+
+Multiple Inputs: A multiplexer has several input lines, which represent the data signals to be selected. 
+
+Single Output:It has one output line that carries the selected input signal. 
+
+Selection Inputs:Control lines called "select lines" determine which input is routed to the output. 
+
+Data Selector:Multiplexers are also known as "data selectors" because they select which data to send to the output. 
+
+# 2x1 MULTIPLEXER
+
+A 2:1 multiplexer (MUX) is a digital logic device that allows one of two binary inputs to be routed to a single output, depending on the value of a select input. It is an essential building block in digital systems used for data selection and control.The basic principle behind a 2:1 multiplexer is selection. 
+The multiplexer examines the value of the select line (S) and chooses between the two inputs:
+
+• If the select line is 0, the output is connected to input I₀
+
+• If the select line is 1, the output is connected to input I₁
+
+• A 2:1 MUX is fundamental for decision-making processes in circuits.
+
+• It is used in ALUs (Arithmetic Logic Units), data buses, and memory selection logic.
+
+• By combining multiple 2:1 multiplexers, larger multiplexers can be constructed (e.g., 4:1, 8:1 MUX).
+
+**Applications:**
+
+•  Register File Access
+
+• Data Bus Control
+
+• Serial Data Transmission
+
+• Interrupt Handling
+
+• Embedded Systems / Microcontrollers
 
 **Block Diagram**
 
@@ -718,6 +759,72 @@ An XNOR gate IC is a type of integrated circuit that contains one or more XNOR (
 | 1                    | 0       | 1       | 1       |
 | 1                    | 1       | 0       | 0       |
 | 1                    | 1       | 1       | 1       |
+
+# 4x1 MUTIPLEXER 
+
+A 4×1 multiplexer (also written as 4-to-1 MUX) is a combinational digital circuit that selects one input from four available data inputs and forwards it to a single output line. The selection of which input to send is controlled by two select lines. To perform this selection, the multiplexer uses a combination of basic logic gates such as AND, OR, and NOT gates. Each input line is connected to one AND gate, which is also fed by a specific combination of the select line values. These gates ensure that only the selected input—based on the select line combination—is allowed to reach the output. The outputs of the AND gates are then combined through an OR gate to produce the final output signal.
+
+**Applications:**
+
+- Used in data routing and signal selection.
+
+- Essential in digital communication systems, microprocessors, and memory units.
+
+- Helps in implementing complex logic circuits by using multiplexing instead of many separate logic gates.
+
+**Advantages:**
+
+- Efficient method for signal selection
+
+- Simplifies circuit design
+
+- Reduces the number of logic gates required for complex functions
+
+**Block Diagram**
+
+![WhatsApp Image 2025-05-29 at 12 25 26_e218cea1](https://github.com/user-attachments/assets/5ee3143c-912b-4c55-a927-21e108a1f32d)
+
+<img src="https://github.com/user-attachments/assets/67572133-bde6-43e3-b782-52fd23b79c29" width="600" />
+
+**Tinkercad Link**
+
+[4x1 Multiplexer](https://www.tinkercad.com/things/7Uxe7fvbTzl-4x1-multiplexer-using-7408-7432-7404)
+
+**4x1 Multiplexer Pin to Pin Connection Table**
+
+| From Pin             | To Pin                          | Purpose                                   |
+| -------------------- | ------------------------------- | ----------------------------------------- |
+| DIP Switch 1         | Pin 1 (IC1 - 74HC08)            | Input A to AND gate 1                     |
+| DIP Switch 2         | Pin 2 (IC1 - 74HC08)            | Input B to AND gate 1                     |
+| Pin 3 (IC1)          | Pin 5 (IC1)                     | Output of AND1 → input of AND2            |
+| DIP Switch 1         | Pin 4 (IC1)                     | A again → input of AND2                   |
+| Pin 6 (IC1)          | Pin 2 (IC3 - 74HC32)            | Output of AND2 → input of OR gate         |
+| DIP Switch 2         | Pin 9 (IC2 - 74HC08)            | B again → input of AND3                   |
+| Pin 3 (IC1)          | Pin 10 (IC2 - 74HC08)           | Output of AND1 → input of AND3            |
+| Pin 8 (IC2)          | Pin 1 (IC3 - 74HC32)            | Output of AND3 → input of OR gate         |
+| Pin 3 (IC3 - 74HC32) | LED (Sum Output via resistor)   | Output of OR gate = Final SUM output      |
+| DIP Switch 3         | Pin 3 (IC4 - 74HC04)            | Carry-in to NOT gate input                |
+| Pin 4 (IC4)          | Pin 1 (IC1 - reused)            | Inverted Carry-in → possibly reused logic |
+| Pin 3 (IC1)          | Pin 13 (IC3 - 74HC32)           | Output of AND1 → OR for carry             |
+| DIP Switch 3         | Pin 12 (IC3)                    | Carry-in again → OR for carry             |
+| Pin 11 (IC3)         | LED (Carry Output via resistor) | Output of OR gate = Final Carry output    |
+| Pin 14 (All ICs)     | +5V (Red rail)                  | Power supply to all ICs                   |
+| Pin 7 (All ICs)      | GND (Blue rail)                 | Ground connection for all ICs             |
+
+**Truth Table**
+
+| S1 | S0 | A | B | C | D | Out |
+| -- | -- | - | - | - | - | --- |
+| 0  | 0  | 0 | x | x | x | 0   |
+| 0  | 0  | 1 | x | x | x | 1   |
+| 0  | 1  | x | 0 | x | x | 0   |
+| 0  | 1  | x | 1 | x | x | 1   |
+| 1  | 0  | x | x | 0 | x | 0   |
+| 1  | 0  | x | x | 1 | x | 1   |
+| 1  | 1  | x | x | x | 0 | 0   |
+| 1  | 1  | x | x | x | 1 | 1   |
+
+
 
 
 
