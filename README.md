@@ -13,7 +13,7 @@
 - [IMPLEMENTATION OF FULL ADDER](#implementation-of-full-adder)
 - [MULTIPLEXERS](#multiplexers)
 - [2x1 MULTIPLEXER](#2x1-multiplexer)
-- [4x1-MULTIPLEXER](#4x1-multiplexer)
+- [4x1 MULTIPLEXER](#4x1-multiplexer)
   
 # What is Digital Electronics
 
