@@ -813,16 +813,13 @@ A 4×1 multiplexer (also written as 4-to-1 MUX) is a combinational digital c
 
 **Truth Table**
 
-| S1 | S0 | A | B | C | D | Out |
-| -- | -- | - | - | - | - | --- |
-| 0  | 0  | 0 | x | x | x | 0   |
-| 0  | 0  | 1 | x | x | x | 1   |
-| 0  | 1  | x | 0 | x | x | 0   |
-| 0  | 1  | x | 1 | x | x | 1   |
-| 1  | 0  | x | x | 0 | x | 0   |
-| 1  | 0  | x | x | 1 | x | 1   |
-| 1  | 1  | x | x | x | 0 | 0   |
-| 1  | 1  | x | x | x | 1 | 1   |
+| S1 | S0 | Output `Y` |
+| -- | -- | ---------- |
+| 0  | 0  | I0         |
+| 0  | 1  | I1         |
+| 1  | 0  | I2         |
+| 1  | 1  | I3         |
+
 
 
 
