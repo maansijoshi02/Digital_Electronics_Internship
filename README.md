@@ -784,7 +784,7 @@ A 4×1 multiplexer (also written as 4-to-1 MUX) is a combinational digital c
 
 ![WhatsApp Image 2025-05-29 at 12 25 26_e218cea1](https://github.com/user-attachments/assets/5ee3143c-912b-4c55-a927-21e108a1f32d)
 
-<img src="https://github.com/user-attachments/assets/67572133-bde6-43e3-b782-52fd23b79c29" width="600" />
+<img src="https://github.com/user-attachments/assets/0745a9a6-4cb7-4eb7-ba18-10dab0ff5743" width="600">
 
 **Tinkercad Link**
 
